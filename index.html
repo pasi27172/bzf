@@ -1,1 +1,3547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INTOR LANKA SPARE PARTS | Automotive Spare Parts & Industrial Bearings Sri Lanka</title>
+  <!-- Google Fonts: Plus Jakarta Sans, Inter & Rajdhani for technical headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for crisp engineering & UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#06101F',
+              900: '#0A192F',
+              800: '#112240',
+              700: '#1D3557',
+            },
+            royal: {
+              600: '#1D4ED8',
+              500: '#2563EB',
+              400: '#3B82F6',
+            },
+            silver: {
+              100: '#F8FAFC',
+              200: '#E2E8F0',
+              300: '#CBD5E1',
+              400: '#C0C7D1',
+              500: '#94A3B8',
+            },
+            amber: {
+              500: '#F59E0B',
+              600: '#D97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'Plus Jakarta Sans', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            tech: ['Rajdhani', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --primary-navy: #0A192F;
+      --royal-blue: #1D4ED8;
+      --electric-blue: #2563EB;
+      --metallic-silver: #C0C7D1;
+      --cool-grey: #E2E8F0;
+      --bg-light: #F8FAFC;
+      --accent-gold: #F59E0B;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+      overflow-x: hidden;
+    }
+
+    .font-tech {
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 0.03em;
+    }
+
+    .metallic-gradient {
+      background: linear-gradient(135deg, #0A192F 0%, #112240 55%, #1D4ED8 100%);
+    }
+
+    .silver-sheen {
+      background: linear-gradient(145deg, #FFFFFF 0%, #F1F5F9 50%, #E2E8F0 100%);
+    }
+
+    .tech-grid-bg {
+      background-image: radial-gradient(rgba(192, 199, 209, 0.16) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94A3B8;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1D4ED8;
+    }
+
+    /* Image Zoom Effect on Product Detail */
+    .zoom-container {
+      overflow: hidden;
+      cursor: zoom-in;
+    }
+    .zoom-container img, .zoom-container svg {
+      transition: transform 0.35s ease;
+    }
+    .zoom-container:hover img, .zoom-container:hover svg {
+      transform: scale(1.18);
+    }
+
+    /* Print Styles for Tax Invoice */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printable-invoice, #printable-invoice * {
+        visibility: visible;
+      }
+      #printable-invoice {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white !important;
+        padding: 20px !important;
+        box-shadow: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- TOP INDUSTRIAL UTILITY BAR -->
+  <div class="bg-navy-950 text-silver-300 text-xs py-2 px-4 border-b border-navy-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-location-dot text-amber-500"></i>
+          <span>156 Panchikawatta Road, Colombo 01000, Sri Lanka</span>
+        </span>
+        <a href="tel:+94112470490" class="hidden sm:flex items-center gap-1.5 hover:text-white transition">
+          <i class="fa-solid fa-phone text-royal-400"></i>
+          <span>0112 470 490</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button onclick="navigate('track')" class="hover:text-amber-500 transition flex items-center gap-1 font-medium">
+          <i class="fa-solid fa-truck-fast"></i> Track Order
+        </button>
+        <span class="text-navy-700">|</span>
+        <span class="text-emerald-400 flex items-center gap-1 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Islandwide Delivery & Panchikawatta Pickup
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY MAIN HEADER & MEGA MENU -->
+  <header class="sticky top-0 z-40 bg-navy-900 text-white shadow-xl border-b border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <div class="flex items-center justify-between gap-4">
+        <!-- Dynamic Brand Logo & Title -->
+        <a href="#home" onclick="navigate('home'); return false;" class="flex items-center gap-3 shrink-0 group">
+          <div id="header-logo-container" class="w-11 h-11 rounded-xl bg-gradient-to-br from-royal-600 to-navy-800 border border-silver-400/30 flex items-center justify-center overflow-hidden shadow-md group-hover:border-amber-500 transition">
+            <!-- Rendered dynamically via JS -->
+          </div>
+          <div>
+            <div class="font-tech font-bold text-xl sm:text-2xl tracking-wider leading-none text-white">
+              INTOR LANKA
+            </div>
+            <div class="text-[10px] sm:text-xs font-semibold tracking-[0.2em] text-silver-400 uppercase mt-0.5">
+              SPARE PARTS & BEARINGS
+            </div>
+          </div>
+        </a>
+
+        <!-- Live Search Bar (Desktop) -->
+        <div class="hidden md:flex flex-1 max-w-xl relative">
+          <div class="relative w-full">
+            <input
+              type="text"
+              id="global-search-input"
+              oninput="handleLiveSearch(this.value)"
+              onfocus="handleLiveSearch(this.value)"
+              placeholder="Search by Part Number (e.g., 6205-2RS), Bearing ID, Brand, or Vehicle..."
+              class="w-full bg-navy-800/90 text-white placeholder-silver-400 text-sm rounded-xl pl-4 pr-11 py-2.5 border border-navy-700 focus:outline-none focus:border-royal-400 focus:ring-2 focus:ring-royal-500/30 transition"
+            />
+            <button onclick="executeSearchSubmit()" class="absolute right-1.5 top-1.5 bg-royal-600 hover:bg-royal-500 text-white px-3 py-1 rounded-lg text-sm transition">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- Live Search Dropdown -->
+          <div id="live-search-dropdown" class="hidden absolute top-full left-0 right-0 mt-2 bg-white text-slate-900 rounded-xl shadow-2xl border border-silver-200 max-h-96 overflow-y-auto z-50"></div>
+        </div>
+
+        <!-- Action Icons: Wishlist, Cart, Account, Admin -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button onclick="toggleWishlistDrawer()" class="relative p-2.5 rounded-xl bg-navy-800 hover:bg-navy-700 text-silver-200 hover:text-white transition" title="Wishlist">
+            <i class="fa-regular fa-heart text-lg"></i>
+            <span id="wishlist-badge" class="absolute -top-1 -right-1 bg-amber-500 text-navy-950 font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">0</span>
+          </button>
+
+          <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-xl bg-royal-600 hover:bg-royal-500 text-white transition shadow-md" title="Shopping Cart">
+            <i class="fa-solid fa-cart-shopping text-lg"></i>
+            <span id="cart-badge" class="absolute -top-1 -right-1 bg-amber-500 text-navy-950 font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">0</span>
+          </button>
+
+          <button onclick="navigate('account')" id="nav-account-btn" class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-navy-800 hover:bg-navy-700 text-sm font-medium border border-navy-700 transition">
+            <i class="fa-regular fa-user text-royal-400"></i>
+            <span id="nav-account-label">Account</span>
+          </button>
+
+          <button onclick="navigate('admin')" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-amber-400 border border-amber-500/40 text-xs sm:text-sm font-semibold transition" title="Admin Control Panel">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span class="hidden lg:inline">Admin</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl bg-navy-800 text-white">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Search Bar -->
+      <div class="mt-2.5 md:hidden relative">
+        <input
+          type="text"
+          oninput="handleLiveSearch(this.value, true)"
+          placeholder="Search part number, bearing code, brand..."
+          class="w-full bg-navy-800 text-white placeholder-silver-400 text-sm rounded-xl pl-3.5 pr-10 py-2 border border-navy-700 focus:outline-none focus:border-royal-400"
+        />
+        <i class="fa-solid fa-magnifying-glass absolute right-3.5 top-2.5 text-silver-400 text-sm"></i>
+        <div id="mobile-search-dropdown" class="hidden absolute top-full left-0 right-0 mt-1.5 bg-white text-slate-900 rounded-xl shadow-2xl border border-silver-200 max-h-80 overflow-y-auto z-50"></div>
+      </div>
+    </div>
+
+    <!-- Navigation & Categories Mega-Menu Bar (Desktop) -->
+    <nav class="hidden md:block bg-navy-950/90 border-t border-navy-800">
+      <div class="max-w-7xl mx-auto px-4 flex items-center justify-between text-sm">
+        <div class="flex items-center space-x-1">
+          <button onclick="navigate('home')" class="px-4 py-2.5 font-medium text-silver-200 hover:text-white hover:bg-navy-800 transition rounded-t-lg">Home</button>
+          <button onclick="openShopWithFilter('ALL', 'ALL')" class="px-4 py-2.5 font-medium text-silver-200 hover:text-white hover:bg-navy-800 transition rounded-t-lg">All Products</button>
+
+          <!-- Mega Menu Dropdowns for 3 Main Categories -->
+          <div class="relative group">
+            <button onclick="openShopWithFilter('Automotive Spare Parts', 'ALL')" class="px-4 py-2.5 font-medium text-silver-200 hover:text-white hover:bg-navy-800 transition flex items-center gap-1.5">
+              <span>Automotive Spare Parts</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-silver-400"></i>
+            </button>
+            <div class="hidden group-hover:block absolute left-0 top-full w-[540px] bg-white text-slate-800 rounded-b-2xl rounded-tr-2xl shadow-2xl border border-silver-200 p-5 z-50">
+              <div class="flex items-center justify-between border-b border-silver-200 pb-2.5 mb-3">
+                <span class="font-tech font-bold text-lg text-navy-900 uppercase">Automotive Spare Parts</span>
+                <button onclick="openShopWithFilter('Automotive Spare Parts', 'ALL')" class="text-xs font-semibold text-royal-600 hover:underline">View All &rarr;</button>
+              </div>
+              <div id="mega-auto-parts" class="grid grid-cols-2 gap-2 text-xs"></div>
+            </div>
+          </div>
+
+          <div class="relative group">
+            <button onclick="openShopWithFilter('Automotive Bearings', 'ALL')" class="px-4 py-2.5 font-medium text-silver-200 hover:text-white hover:bg-navy-800 transition flex items-center gap-1.5">
+              <span>Automotive Bearings</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-silver-400"></i>
+            </button>
+            <div class="hidden group-hover:block absolute left-0 top-full w-[480px] bg-white text-slate-800 rounded-b-2xl rounded-tr-2xl shadow-2xl border border-silver-200 p-5 z-50">
+              <div class="flex items-center justify-between border-b border-silver-200 pb-2.5 mb-3">
+                <span class="font-tech font-bold text-lg text-navy-900 uppercase">Automotive Bearings</span>
+                <button onclick="openShopWithFilter('Automotive Bearings', 'ALL')" class="text-xs font-semibold text-royal-600 hover:underline">View All &rarr;</button>
+              </div>
+              <div id="mega-auto-bearings" class="grid grid-cols-2 gap-2 text-xs"></div>
+            </div>
+          </div>
+
+          <div class="relative group">
+            <button onclick="openShopWithFilter('Machinery Bearings', 'ALL')" class="px-4 py-2.5 font-medium text-silver-200 hover:text-white hover:bg-navy-800 transition flex items-center gap-1.5">
+              <span>Machinery Bearings</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-silver-400"></i>
+            </button>
+            <div class="hidden group-hover:block absolute left-0 top-full w-[480px] bg-white text-slate-800 rounded-b-2xl rounded-tr-2xl shadow-2xl border border-silver-200 p-5 z-50">
+              <div class="flex items-center justify-between border-b border-silver-200 pb-2.5 mb-3">
+                <span class="font-tech font-bold text-lg text-navy-900 uppercase">Industrial Machinery Bearings</span>
+                <button onclick="openShopWithFilter('Machinery Bearings', 'ALL')" class="text-xs font-semibold text-royal-600 hover:underline">View All &rarr;</button>
+              </div>
+              <div id="mega-machinery-bearings" class="grid grid-cols-2 gap-2 text-xs"></div>
+            </div>
+          </div>
+
+          <button onclick="navigate('about')" class="px-4 py-2.5 font-medium text-silver-200 hover:text-white hover:bg-navy-800 transition">About Us</button>
+          <button onclick="navigate('contact')" class="px-4 py-2.5 font-medium text-silver-200 hover:text-white hover:bg-navy-800 transition">Contact Us</button>
+        </div>
+
+        <a href="https://wa.me/94112470490" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 py-2">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Bulk & Part Inquiry: 0112 470 490</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-t border-navy-800 px-4 py-4 space-y-2">
+      <button onclick="navigate('home'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium">Home</button>
+      <button onclick="openShopWithFilter('ALL', 'ALL'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium">All Products Catalogue</button>
+      <button onclick="openShopWithFilter('Automotive Spare Parts', 'ALL'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium text-royal-400">Automotive Spare Parts (10)</button>
+      <button onclick="openShopWithFilter('Automotive Bearings', 'ALL'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium text-royal-400">Automotive Bearings (8)</button>
+      <button onclick="openShopWithFilter('Machinery Bearings', 'ALL'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium text-royal-400">Machinery Bearings (8)</button>
+      <button onclick="navigate('track'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium">Track My Order</button>
+      <button onclick="navigate('account'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium">Customer Account</button>
+      <button onclick="navigate('about'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium">About INTOR LANKA</button>
+      <button onclick="navigate('contact'); toggleMobileMenu();" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-navy-800 font-medium">Contact Us</button>
+    </div>
+  </header>
+
+  <!-- MAIN DYNAMIC VIEWPORT -->
+  <main id="app-viewport" class="flex-1">
+    <!-- Content dynamically rendered here by JS router -->
+  </main>
+
+  <!-- FLOATING WHATSAPP SUPPORT BUTTON -->
+  <a
+    href="https://wa.me/94112470490?text=Hello%20INTOR%20LANKA%20SPARE%20PARTS,%20I%20would%20like%20to%20inquire%20about%20spare%20parts%20/%20bearings."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3 rounded-full shadow-2xl flex items-center gap-2.5 transition transform hover:scale-105 border-2 border-white/20"
+    title="Chat with INTOR LANKA on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="hidden sm:inline font-semibold text-sm">WhatsApp Support</span>
+  </a>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed bottom-6 left-6 z-50 space-y-2 pointer-events-none"></div>
+
+  <!-- SLIDE-OVER SHOPPING CART DRAWER -->
+  <div id="cart-drawer-overlay" onclick="toggleCartDrawer()" class="hidden fixed inset-0 bg-navy-950/60 backdrop-blur-xs z-50 transition-opacity"></div>
+  <aside id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 bg-navy-900 text-white flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <i class="fa-solid fa-cart-shopping text-amber-500 text-lg"></i>
+        <h2 class="font-tech font-bold text-xl tracking-wide uppercase">Your Parts Cart</h2>
+      </div>
+      <button onclick="toggleCartDrawer()" class="p-2 rounded-lg hover:bg-navy-800 text-silver-300 hover:text-white">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+    <div id="cart-drawer-items" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+    <div id="cart-drawer-footer" class="p-5 bg-silver-100 border-t border-silver-200"></div>
+  </aside>
+
+  <!-- SLIDE-OVER WISHLIST DRAWER -->
+  <div id="wishlist-drawer-overlay" onclick="toggleWishlistDrawer()" class="hidden fixed inset-0 bg-navy-950/60 backdrop-blur-xs z-50"></div>
+  <aside id="wishlist-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 bg-navy-900 text-white flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <i class="fa-solid fa-heart text-amber-500 text-lg"></i>
+        <h2 class="font-tech font-bold text-xl tracking-wide uppercase">Saved Parts Wishlist</h2>
+      </div>
+      <button onclick="toggleWishlistDrawer()" class="p-2 rounded-lg hover:bg-navy-800 text-silver-300 hover:text-white">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+    <div id="wishlist-drawer-items" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+  </aside>
+
+  <!-- QUICK VIEW / INVOICE / PAYMENT MODAL -->
+  <div id="global-modal-overlay" class="hidden fixed inset-0 bg-navy-950/75 backdrop-blur-xs z-50 flex items-center justify-center p-4 overflow-y-auto">
+    <div id="global-modal-content" class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative border border-silver-200"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-silver-300 border-t border-navy-800 mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div id="footer-logo-container" class="w-10 h-10 rounded-xl bg-royal-600 flex items-center justify-center overflow-hidden"></div>
+          <div>
+            <div class="font-tech font-bold text-xl text-white tracking-wider">INTOR LANKA</div>
+            <div class="text-[10px] tracking-[0.2em] text-silver-400 uppercase">SPARE PARTS</div>
+          </div>
+        </div>
+        <p class="text-sm text-silver-400 leading-relaxed mb-4">
+          Sri Lanka's trusted supplier for genuine automotive spare parts, precision automotive bearings, and heavy-duty industrial machinery bearings.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/94112470490" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-navy-800 hover:bg-emerald-600 text-white flex items-center justify-center transition">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="tel:+94112470490" class="w-9 h-9 rounded-lg bg-navy-800 hover:bg-royal-600 text-white flex items-center justify-center transition">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <button onclick="navigate('contact')" class="w-9 h-9 rounded-lg bg-navy-800 hover:bg-royal-600 text-white flex items-center justify-center transition">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-tech font-bold text-lg text-white uppercase tracking-wider mb-4">Product Categories</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><button onclick="openShopWithFilter('Automotive Spare Parts', 'ALL')" class="hover:text-amber-500 transition">Automotive Spare Parts</button></li>
+          <li><button onclick="openShopWithFilter('Automotive Bearings', 'ALL')" class="hover:text-amber-500 transition">Automotive Bearings</button></li>
+          <li><button onclick="openShopWithFilter('Machinery Bearings', 'ALL')" class="hover:text-amber-500 transition">Industrial Machinery Bearings</button></li>
+          <li><button onclick="openShopWithFilter('Automotive Spare Parts', 'Brake System Parts')" class="hover:text-amber-500 transition">Brake Pads & Rotors</button></li>
+          <li><button onclick="openShopWithFilter('Machinery Bearings', 'Pillow Block Bearings')" class="hover:text-amber-500 transition">Pillow Block Units (UCP/UCF)</button></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-tech font-bold text-lg text-white uppercase tracking-wider mb-4">Customer Service</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><button onclick="navigate('track')" class="hover:text-amber-500 transition">Track Your Order</button></li>
+          <li><button onclick="navigate('account')" class="hover:text-amber-500 transition">My Account & Order History</button></li>
+          <li><button onclick="navigate('about')" class="hover:text-amber-500 transition">About INTOR LANKA</button></li>
+          <li><button onclick="navigate('contact')" class="hover:text-amber-500 transition">Bulk & Fleet Inquiries</button></li>
+          <li><button onclick="navigate('admin')" class="hover:text-amber-500 transition">Admin & Media Portal</button></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-tech font-bold text-lg text-white uppercase tracking-wider mb-4">Head Office & Store</h3>
+        <ul class="space-y-3 text-sm text-silver-400">
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-location-dot text-amber-500 mt-1"></i>
+            <span><strong class="text-white">INTOR LANKA SPARE PARTS</strong><br>156 Panchikawatta Road,<br>Colombo 01000, Sri Lanka</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-phone text-royal-400"></i>
+            <a href="tel:+94112470490" class="text-white font-semibold hover:text-amber-500">0112 470 490</a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-clock text-emerald-400"></i>
+            <span>Mon – Sat: 8:30 AM – 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-navy-900 py-5 px-4 text-center text-xs text-silver-500">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <p>&copy; 2026 INTOR LANKA SPARE PARTS. All Rights Reserved. Colombo, Sri Lanka.</p>
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 rounded bg-navy-900 text-silver-300 border border-navy-800">Cash on Delivery</span>
+          <span class="px-2.5 py-1 rounded bg-navy-900 text-silver-300 border border-navy-800">VISA / Mastercard</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- APPLICATION LOGIC & PERSISTENT DATA ENGINE -->
+  <script>
+    /*************************************************************************
+     * 1. TAXONOMY & INITIAL SEED DATA (3 MAIN CATEGORIES + 26 SUBCATEGORIES)
+     *************************************************************************/
+    const CATEGORIES_TAXONOMY = {
+      "Automotive Spare Parts": [
+        "Engine Parts",
+        "Brake System Parts",
+        "Suspension Parts",
+        "Transmission Parts",
+        "Electrical Components",
+        "Filters",
+        "Belts",
+        "Clutch Components",
+        "Cooling System Parts",
+        "Other Automotive Spare Parts"
+      ],
+      "Automotive Bearings": [
+        "Deep Groove Ball Bearings",
+        "Tapered Roller Bearings",
+        "Needle Roller Bearings",
+        "Angular Contact Bearings",
+        "Wheel Bearings",
+        "Clutch Bearings",
+        "Alternator Bearings",
+        "Other Automotive Bearings"
+      ],
+      "Machinery Bearings": [
+        "Industrial Ball Bearings",
+        "Roller Bearings",
+        "Spherical Roller Bearings",
+        "Cylindrical Roller Bearings",
+        "Thrust Bearings",
+        "Pillow Block Bearings",
+        "Industrial Bearing Units",
+        "Other Machinery Bearings"
+      ]
+    };
+
+    const SRI_LANKA_DISTRICTS = [
+      "Colombo", "Gampaha", "Kalutara", "Kandy", "Matale", "Nuwara Eliya",
+      "Galle", "Matara", "Hambantota", "Jaffna", "Kilinochchi", "Mannar",
+      "Vavuniya", "Mullaitivu", "Batticaloa", "Ampara", "Trincomalee",
+      "Kurunegala", "Puttalam", "Anuradhapura", "Polonnaruwa", "Badulla",
+      "Monaragala", "Ratnapura", "Kegalle"
+    ];
+
+    // High-clarity bespoke SVG technical artwork generator for realistic product visuals
+    function getTechnicalPartSVG(type, partCode, brand) {
+      const palettes = {
+        bearing: { ring1: "#94A3B8", ring2: "#CBD5E1", core: "#1E293B", accent: "#2563EB" },
+        brake: { ring1: "#475569", ring2: "#94A3B8", core: "#0F172A", accent: "#F59E0B" },
+        engine: { ring1: "#334155", ring2: "#CBD5E1", core: "#1D4ED8", accent: "#F59E0B" },
+        pillow: { ring1: "#1E3A8A", ring2: "#93C5FD", core: "#0F172A", accent: "#F59E0B" }
+      };
+      const p = palettes[type] || palettes.bearing;
+
+      if (type === 'pillow') {
+        return `
+          <svg viewBox="0 0 320 240" class="w-full h-full object-contain p-4" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="metalGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#E2E8F0"/>
+                <stop offset="50%" stop-color="#94A3B8"/>
+                <stop offset="100%" stop-color="#475569"/>
+              </linearGradient>
+              <linearGradient id="housingGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#1D4ED8"/>
+                <stop offset="100%" stop-color="#0A192F"/>
+              </linearGradient>
+            </defs>
+            <rect x="35" y="165" width="250" height="28" rx="6" fill="url(#housingGrad)"/>
+            <path d="M75 165 C75 75, 245 75, 245 165 Z" fill="url(#housingGrad)"/>
+            <circle cx="160" cy="122" r="46" fill="url(#metalGrad)" stroke="#0F172A" stroke-width="3"/>
+            <circle cx="160" cy="122" r="26" fill="#F8FAFC" stroke="#334155" stroke-width="4"/>
+            <rect x="52" y="158" width="16" height="8" rx="2" fill="#CBD5E1"/>
+            <rect x="252" y="158" width="16" height="8" rx="2" fill="#CBD5E1"/>
+            <circle cx="160" cy="64" r="5" fill="#F59E0B"/>
+            <text x="160" y="218" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="700" font-size="14" fill="#334155">${brand} • ${partCode}</text>
+          </svg>`;
+      }
+
+      if (type === 'brake' || type === 'engine') {
+        return `
+          <svg viewBox="0 0 320 240" class="w-full h-full object-contain p-4" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="rotorGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#F8FAFC"/>
+                <stop offset="65%" stop-color="#CBD5E1"/>
+                <stop offset="100%" stop-color="#64748B"/>
+              </radialGradient>
+            </defs>
+            <circle cx="160" cy="115" r="78" fill="url(#rotorGrad)" stroke="#334155" stroke-width="3"/>
+            <circle cx="160" cy="115" r="36" fill="#1E293B" stroke="#94A3B8" stroke-width="3"/>
+            <circle cx="160" cy="115" r="18" fill="#F8FAFC"/>
+            <g fill="#475569">
+              <circle cx="160" cy="89" r="3.5"/><circle cx="186" cy="115" r="3.5"/>
+              <circle cx="160" cy="141" r="3.5"/><circle cx="134" cy="115" r="3.5"/>
+              <circle cx="120" cy="75" r="2.5"/><circle cx="200" cy="75" r="2.5"/>
+              <circle cx="120" cy="155" r="2.5"/><circle cx="200" cy="155" r="2.5"/>
+            </g>
+            <path d="M205 55 L245 75 L245 155 L205 175 L192 150 L215 135 L215 95 L192 80 Z" fill="#1D4ED8" stroke="#0A192F" stroke-width="2"/>
+            <text x="160" y="218" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="700" font-size="14" fill="#334155">${brand} • ${partCode}</text>
+          </svg>`;
+      }
+
+      // Precision Bearing Cross-Section & Steel Balls SVG
+      return `
+        <svg viewBox="0 0 320 240" class="w-full h-full object-contain p-4" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="steelOuter" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#F1F5F9"/>
+              <stop offset="45%" stop-color="#94A3B8"/>
+              <stop offset="100%" stop-color="#334155"/>
+            </linearGradient>
+            <radialGradient id="ballSteel" cx="35%" cy="35%" r="65%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="55%" stop-color="#CBD5E1"/>
+              <stop offset="100%" stop-color="#1E293B"/>
+            </radialGradient>
+          </defs>
+          <!-- Outer Race -->
+          <circle cx="160" cy="115" r="76" fill="url(#steelOuter)" stroke="#0F172A" stroke-width="2.5"/>
+          <circle cx="160" cy="115" r="60" fill="#1E293B"/>
+          <!-- Steel Bearing Balls -->
+          <circle cx="160" cy="65" r="10" fill="url(#ballSteel)"/>
+          <circle cx="195" cy="80" r="10" fill="url(#ballSteel)"/>
+          <circle cx="210" cy="115" r="10" fill="url(#ballSteel)"/>
+          <circle cx="195" cy="150" r="10" fill="url(#ballSteel)"/>
+          <circle cx="160" cy="165" r="10" fill="url(#ballSteel)"/>
+          <circle cx="125" cy="150" r="10" fill="url(#ballSteel)"/>
+          <circle cx="110" cy="115" r="10" fill="url(#ballSteel)"/>
+          <circle cx="125" cy="80" r="10" fill="url(#ballSteel)"/>
+          <!-- Inner Race -->
+          <circle cx="160" cy="115" r="40" fill="url(#steelOuter)" stroke="#0F172A" stroke-width="2"/>
+          <circle cx="160" cy="115" r="24" fill="#F8FAFC" stroke="#475569" stroke-width="2"/>
+          <!-- Seal / Shield Accent -->
+          <circle cx="160" cy="115" r="50" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 4"/>
+          <text x="160" y="218" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="700" font-size="14" fill="#334155">${brand} • ${partCode}</text>
+        </svg>`;
+    }
+
+    const INITIAL_PRODUCTS = [
+      {
+        id: "PRD-1001",
+        partNumber: "6205-2RS1/C3",
+        name: "SKF Deep Groove Ball Bearing 6205-2RS1",
+        brand: "SKF",
+        category: "Automotive Bearings",
+        subcategory: "Deep Groove Ball Bearings",
+        price: 2450,
+        oldPrice: 2900,
+        stock: 64,
+        featured: true,
+        bestSeller: true,
+        visualType: "bearing",
+        customImages: [],
+        description: "High-precision single-row deep groove ball bearing with double nitrile rubber contact seals (2RS1) and C3 radial internal clearance. Ideal for alternators, electric motors, and automotive transmission shafts.",
+        specs: {
+          "Inner Diameter (ID)": "25 mm",
+          "Outer Diameter (OD)": "52 mm",
+          "Width (B)": "15 mm",
+          "Seal Type": "Double Rubber Seal (2RS1)",
+          "Material": "Chrome Steel (SAE 52100)",
+          "Dynamic Load Rating": "14.8 kN"
+        }
+      },
+      {
+        id: "PRD-1002",
+        partNumber: "32008-X",
+        name: "KOYO Tapered Roller Bearing 32008 JR",
+        brand: "KOYO",
+        category: "Automotive Bearings",
+        subcategory: "Tapered Roller Bearings",
+        price: 4850,
+        oldPrice: 5400,
+        stock: 38,
+        featured: true,
+        bestSeller: true,
+        visualType: "bearing",
+        customImages: [],
+        description: "Japanese OEM-grade tapered roller bearing engineered to handle combined radial and axial thrust loads in wheel hubs, differentials, and commercial vehicle axles.",
+        specs: {
+          "Inner Diameter (ID)": "40 mm",
+          "Outer Diameter (OD)": "68 mm",
+          "Width (T)": "19 mm",
+          "Cage Material": "Pressed Steel",
+          "Origin": "Japan",
+          "Application": "Front/Rear Wheel Hubs & Axles"
+        }
+      },
+      {
+        id: "PRD-1003",
+        partNumber: "DAC40740042",
+        name: "NSK Double Row Hub Wheel Bearing 40x74x42",
+        brand: "NSK",
+        category: "Automotive Bearings",
+        subcategory: "Wheel Bearings",
+        price: 8900,
+        oldPrice: 10200,
+        stock: 22,
+        featured: true,
+        bestSeller: true,
+        visualType: "bearing",
+        customImages: [],
+        description: "Sealed angular contact double-row wheel hub bearing compatible with Toyota Corolla Axio, Fielder, Allion, and Premio front hubs.",
+        specs: {
+          "Inner Diameter (ID)": "40 mm",
+          "Outer Diameter (OD)": "74 mm",
+          "Width (W)": "42 mm",
+          "Vehicle Compatibility": "Toyota NZE141 / ZRT260 / Prius",
+          "ABS Magnetic Encoder": "Integrated",
+          "Pre-Greased": "Yes (High-Temp Lithium)"
+        }
+      },
+      {
+        id: "PRD-1004",
+        partNumber: "UCP208-24",
+        name: "NTN Heavy-Duty Pillow Block Bearing Unit UCP208",
+        brand: "NTN",
+        category: "Machinery Bearings",
+        subcategory: "Pillow Block Bearings",
+        price: 6750,
+        oldPrice: 7500,
+        stock: 45,
+        featured: true,
+        bestSeller: true,
+        visualType: "pillow",
+        customImages: [],
+        description: "Cast iron housing pillow block bearing unit with set-screw locking insert and grease nipple. Built for tea factories, rice mills, conveyors, and quarry machinery across Sri Lanka.",
+        specs: {
+          "Shaft Diameter": "40 mm",
+          "Housing Material": "High-Grade Cast Iron (P208)",
+          "Bolt Hole Spacing": "137 mm",
+          "Relubrication": "M6 Grease Fitting Included",
+          "Dynamic Load": "29.1 kN",
+          "Industry Use": "Conveyors, Tea & Rice Mills"
+        }
+      },
+      {
+        id: "PRD-1005",
+        partNumber: "22211-EAE4",
+        name: "NSK Spherical Roller Bearing 22211 (55x100x25)",
+        brand: "NSK",
+        category: "Machinery Bearings",
+        subcategory: "Spherical Roller Bearings",
+        price: 16400,
+        oldPrice: 18500,
+        stock: 14,
+        featured: false,
+        bestSeller: true,
+        visualType: "bearing",
+        customImages: [],
+        description: "Self-aligning double-row spherical roller bearing capable of accommodating heavy radial loads and shaft misalignment in stone crushers, gearboxes, and industrial blowers.",
+        specs: {
+          "Inner Diameter (ID)": "55 mm",
+          "Outer Diameter (OD)": "100 mm",
+          "Width (B)": "25 mm",
+          "Bore Type": "Cylindrical Bore",
+          "Lubrication Groove": "W33 Groove & 3 Oil Holes",
+          "Max Speed": "5,300 RPM"
+        }
+      },
+      {
+        id: "PRD-1006",
+        partNumber: "P09-85N-BREMBO",
+        name: "Brembo Ceramic Front Brake Pad Set (Toyota / Honda)",
+        brand: "BREMBO",
+        category: "Automotive Spare Parts",
+        subcategory: "Brake System Parts",
+        price: 12500,
+        oldPrice: 14200,
+        stock: 30,
+        featured: true,
+        bestSeller: false,
+        visualType: "brake",
+        customImages: [],
+        description: "Low-dust, noise-free OEM ceramic formulation brake pads delivering superior stopping power in wet monsoon and hilly up-country driving conditions.",
+        specs: {
+          "Position": "Front Axle (Set of 4 Pads)",
+          "Friction Material": "NAO Ceramic Compound",
+          "Wear Indicator": "Acoustic Shim Included",
+          "Compatibility": "Toyota Aqua, Vitz, Axio, Honda Fit GP5",
+          "Certification": "ECE R90 Approved"
+        }
+      },
+      {
+        id: "PRD-1007",
+        partNumber: "260340-0590",
+        name: "DENSO Iridium Power Spark Plug Set (4 Pcs)",
+        brand: "DENSO",
+        category: "Automotive Spare Parts",
+        subcategory: "Engine Parts",
+        price: 11800,
+        oldPrice: 13000,
+        stock: 50,
+        featured: true,
+        bestSeller: false,
+        visualType: "engine",
+        customImages: [],
+        description: "Genuine 0.4mm ultra-fine iridium center electrode spark plugs improving fuel economy, cold starts, and throttle response for Japanese EFI & Hybrid engines.",
+        specs: {
+          "Electrode Tip": "0.4 mm Laser-Welded Iridium",
+          "Thread Size": "M14 x 1.25",
+          "Reach": "26.5 mm",
+          "Pack Quantity": "4 Spark Plugs",
+          "Service Interval": "Up to 100,000 km"
+        }
+      },
+      {
+        id: "PRD-1008",
+        partNumber: "KT-318A-AISIN",
+        name: "AISIN Complete Clutch Kit (Cover, Disc & Release Bearing)",
+        brand: "AISIN",
+        category: "Automotive Spare Parts",
+        subcategory: "Clutch Components",
+        price: 34500,
+        oldPrice: 38900,
+        stock: 9,
+        featured: false,
+        bestSeller: true,
+        visualType: "brake",
+        customImages: [],
+        description: "Complete 3-piece Japanese OEM clutch replacement assembly featuring NVR damper technology for smooth engagement and extended service life.",
+        specs: {
+          "Kit Includes": "Pressure Plate, Clutch Disc, Release Bearing",
+          "Outer Diameter": "215 mm",
+          "Spline Teeth": "21 Teeth",
+          "Application": "Toyota Hilux / HiAce / Corolla Commercial",
+          "Origin": "Made in Japan"
+        }
+      },
+      {
+        id: "PRD-1009",
+        partNumber: "NU206-ECP",
+        name: "SKF Cylindrical Roller Bearing NU206 ECP",
+        brand: "SKF",
+        category: "Machinery Bearings",
+        subcategory: "Cylindrical Roller Bearings",
+        price: 7950,
+        oldPrice: 8800,
+        stock: 19,
+        featured: false,
+        bestSeller: false,
+        visualType: "bearing",
+        customImages: [],
+        description: "High-load radial cylindrical roller bearing with separable inner ring and glass-fiber reinforced polyamide cage for electric motors and pumps.",
+        specs: {
+          "Inner Diameter (ID)": "30 mm",
+          "Outer Diameter (OD)": "62 mm",
+          "Width (B)": "16 mm",
+          "Design": "NU (Two integral flanges on outer ring)",
+          "Cage": "PA66 Polyamide"
+        }
+      },
+      {
+        id: "PRD-1010",
+        partNumber: "51108-NSK",
+        name: "NSK Single Direction Thrust Ball Bearing 51108",
+        brand: "NSK",
+        category: "Machinery Bearings",
+        subcategory: "Thrust Bearings",
+        price: 3650,
+        oldPrice: 4100,
+        stock: 4,
+        featured: false,
+        bestSeller: false,
+        visualType: "bearing",
+        customImages: [],
+        description: "Precision axial thrust ball bearing designed exclusively for high axial loads in vertical shafts, jacks, and machine tool spindles.",
+        specs: {
+          "Shaft Bore (d)": "40 mm",
+          "Housing Bore (D)": "60 mm",
+          "Height (T)": "13 mm",
+          "Load Direction": "Single Direction Axial"
+        }
+      },
+      {
+        id: "PRD-1011",
+        partNumber: "0986AF0132",
+        name: "BOSCH Heavy Duty Oil & Fuel Filter Combo Pack",
+        brand: "BOSCH",
+        category: "Automotive Spare Parts",
+        subcategory: "Filters",
+        price: 4200,
+        oldPrice: 4900,
+        stock: 80,
+        featured: false,
+        bestSeller: false,
+        visualType: "engine",
+        customImages: [],
+        description: "Multi-layered microfiber filtration media capturing 99% of microscopic engine contaminants with silicone anti-drainback valve.",
+        specs: {
+          "Filter Type": "Spin-On Full Flow + Fuel Element",
+          "Bypass Valve Pressure": "1.0 Bar",
+          "Compatibility": "Toyota, Nissan, Mitsubishi Diesel & Petrol"
+        }
+      },
+      {
+        id: "PRD-1012",
+        partNumber: "B17-116D-NSK",
+        name: "NSK High-Speed Alternator Ball Bearing B17-116D",
+        brand: "NSK",
+        category: "Automotive Bearings",
+        subcategory: "Alternator Bearings",
+        price: 2150,
+        oldPrice: 2500,
+        stock: 52,
+        featured: false,
+        bestSeller: false,
+        visualType: "bearing",
+        customImages: [],
+        description: "High-RPM, high-temperature alternator rotor bearing with Viton seals engineered to withstand under-hood temperatures up to 180°C.",
+        specs: {
+          "Inner Diameter (ID)": "17 mm",
+          "Outer Diameter (OD)": "52 mm",
+          "Width (B)": "16 mm",
+          "Grease": "High-Temp Polyurea",
+          "Speed Rating": "18,000 RPM"
+        }
+      }
+    ];
+
+    const INITIAL_REVIEWS = [
+      { id: "REV-1", productId: "PRD-1001", author: "Kasun Perera (Colombo)", rating: 5, date: "2026-10-14", comment: "100% genuine SKF bearings. Delivered to Nugegoda within 4 hours of ordering!" },
+      { id: "REV-2", productId: "PRD-1004", author: "Nuwan Jayawardena — Ratnapura Tea Factory", rating: 5, date: "2026-10-22", comment: "We source all our UCP pillow blocks and spherical bearings from INTOR LANKA Panchikawatta. Very reliable stock." },
+      { id: "REV-3", productId: "PRD-1006", author: "Dinesh Fernando (Kandy)", rating: 5, date: "2026-11-02", comment: "Brembo brake pads fit my Toyota Axio perfectly. Zero squeaking on Kandy hills." }
+    ];
+
+    const INITIAL_ORDERS = [
+      {
+        orderRef: "INT-2026-4819",
+        date: "2026-11-12 14:30",
+        customer: {
+          name: "Chaminda Bandara",
+          phone: "077 452 8890",
+          email: "chaminda.b@example.lk",
+          street: "42/B Kandy Road",
+          city: "Kadawatha",
+          district: "Gampaha",
+          postalCode: "11850"
+        },
+        deliveryMethod: "Standard Islandwide Courier",
+        deliveryFee: 450,
+        paymentMethod: "Cash on Delivery (COD)",
+        paymentStatus: "Pending Collection",
+        status: "Dispatched",
+        items: [
+          { id: "PRD-1001", partNumber: "6205-2RS1/C3", name: "SKF Deep Groove Ball Bearing 6205-2RS1", price: 2450, qty: 4 },
+          { id: "PRD-1004", partNumber: "UCP208-24", name: "NTN Heavy-Duty Pillow Block Bearing Unit UCP208", price: 6750, qty: 2 }
+        ],
+        subtotal: 23300,
+        total: 23750
+      },
+      {
+        orderRef: "INT-2026-4902",
+        date: "2026-11-16 10:15",
+        customer: {
+          name: "Roshan Silva",
+          phone: "071 892 3311",
+          email: "roshan.motors@example.lk",
+          street: "18 Galle Road",
+          city: "Mount Lavinia",
+          district: "Colombo",
+          postalCode: "10370"
+        },
+        deliveryMethod: "Express Colombo Delivery",
+        deliveryFee: 650,
+        paymentMethod: "Card Payment (VISA •••• 4242)",
+        paymentStatus: "Paid",
+        status: "Confirmed",
+        items: [
+          { id: "PRD-1003", partNumber: "DAC40740042", name: "NSK Double Row Hub Wheel Bearing 40x74x42", price: 8900, qty: 2 }
+        ],
+        subtotal: 17800,
+        total: 18450
+      }
+    ];
+
+    /*************************************************************************
+     * 2. APPLICATION STATE & LOCALSTORAGE PERSISTENCE ENGINE
+     *************************************************************************/
+    const STORAGE_KEYS = {
+      PRODUCTS: 'intor_lanka_products_v1',
+      ORDERS: 'intor_lanka_orders_v1',
+      CART: 'intor_lanka_cart_v1',
+      WISHLIST: 'intor_lanka_wishlist_v1',
+      BRANDING: 'intor_lanka_branding_v1',
+      USERS: 'intor_lanka_users_v1',
+      CURRENT_USER: 'intor_lanka_session_v1',
+      ADMIN_AUTH: 'intor_lanka_admin_auth_v1',
+      REVIEWS: 'intor_lanka_reviews_v1',
+      INQUIRIES: 'intor_lanka_inquiries_v1',
+      RECENTLY_VIEWED: 'intor_lanka_recent_v1'
+    };
+
+    let state = {
+      products: JSON.parse(localStorage.getItem(STORAGE_KEYS.PRODUCTS)) || INITIAL_PRODUCTS,
+      orders: JSON.parse(localStorage.getItem(STORAGE_KEYS.ORDERS)) || INITIAL_ORDERS,
+      cart: JSON.parse(localStorage.getItem(STORAGE_KEYS.CART)) || [],
+      wishlist: JSON.parse(localStorage.getItem(STORAGE_KEYS.WISHLIST)) || ["PRD-1003"],
+      branding: JSON.parse(localStorage.getItem(STORAGE_KEYS.BRANDING)) || {
+        logoDataUrl: null,
+        heroBannerDataUrl: null,
+        promoBannerText: "ISLANDWIDE EXPRESS DELIVERY • GENUINE SKF, NSK, KOYO, NTN, DENSO & BREMBO STOCK"
+      },
+      users: JSON.parse(localStorage.getItem(STORAGE_KEYS.USERS)) || [
+        {
+          id: "USR-01",
+          name: "Chaminda Bandara",
+          email: "customer@intorlanka.lk",
+          phone: "077 452 8890",
+          password: "password123",
+          address: { street: "42/B Kandy Road", city: "Kadawatha", district: "Gampaha", postalCode: "11850" }
+        }
+      ],
+      currentUser: JSON.parse(localStorage.getItem(STORAGE_KEYS.CURRENT_USER)) || null,
+      isAdminAuthenticated: JSON.parse(localStorage.getItem(STORAGE_KEYS.ADMIN_AUTH)) || false,
+      reviews: JSON.parse(localStorage.getItem(STORAGE_KEYS.REVIEWS)) || INITIAL_REVIEWS,
+      inquiries: JSON.parse(localStorage.getItem(STORAGE_KEYS.INQUIRIES)) || [
+        {
+          id: "INQ-101",
+          date: "2026-11-15 09:45",
+          name: "Lanka Heavy Engineering (Pvt) Ltd",
+          phone: "077 221 9000",
+          email: "procurement@lankaheavy.lk",
+          type: "Bulk / Industrial Machinery Quote",
+          message: "Need quotation for 20 units of 22211 Spherical Roller Bearings and 15 units of UCP208 Pillow Blocks."
+        }
+      ],
+      recentlyViewed: JSON.parse(localStorage.getItem(STORAGE_KEYS.RECENTLY_VIEWED)) || ["PRD-1001", "PRD-1004"],
+      // Navigation & Filter State
+      currentView: 'home',
+      selectedProductId: null,
+      shopFilters: {
+        category: 'ALL',
+        subcategory: 'ALL',
+        brand: 'ALL',
+        maxPrice: 50000,
+        inStockOnly: false,
+        searchQuery: '',
+        sortBy: 'featured'
+      },
+      adminTab: 'analytics',
+      editingProductId: null
+    };
+
+    function persistState() {
+      try {
+        localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(state.products));
+        localStorage.setItem(STORAGE_KEYS.ORDERS, JSON.stringify(state.orders));
+        localStorage.setItem(STORAGE_KEYS.CART, JSON.stringify(state.cart));
+        localStorage.setItem(STORAGE_KEYS.WISHLIST, JSON.stringify(state.wishlist));
+        localStorage.setItem(STORAGE_KEYS.BRANDING, JSON.stringify(state.branding));
+        localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(state.users));
+        localStorage.setItem(STORAGE_KEYS.CURRENT_USER, JSON.stringify(state.currentUser));
+        localStorage.setItem(STORAGE_KEYS.ADMIN_AUTH, JSON.stringify(state.isAdminAuthenticated));
+        localStorage.setItem(STORAGE_KEYS.REVIEWS, JSON.stringify(state.reviews));
+        localStorage.setItem(STORAGE_KEYS.INQUIRIES, JSON.stringify(state.inquiries));
+        localStorage.setItem(STORAGE_KEYS.RECENTLY_VIEWED, JSON.stringify(state.recentlyViewed));
+      } catch (e) {
+        showToast("Storage limit reached. Consider using smaller compressed images.", "error");
+      }
+      updateGlobalBadges();
+    }
+
+    function formatLKR(amount) {
+      return "LKR " + Number(amount || 0).toLocaleString("en-LK", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function showToast(message, type = "success") {
+      const container = document.getElementById("toast-container");
+      const toast = document.createElement("div");
+      const bg = type === "error" ? "bg-red-600" : type === "warning" ? "bg-amber-600" : "bg-navy-900 border-l-4 border-amber-500";
+      const icon = type === "error" ? "fa-circle-exclamation" : "fa-circle-check";
+      toast.className = `${bg} text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 text-sm font-medium pointer-events-auto transition-all duration-300`;
+      toast.innerHTML = `<i class="fa-solid ${icon} text-amber-400"></i><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(10px)";
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+
+    function renderBrandLogoHTML(sizeClass = "w-full h-full") {
+      if (state.branding.logoDataUrl) {
+        return `<img src="${state.branding.logoDataUrl}" alt="INTOR LANKA SPARE PARTS Logo" class="${sizeClass} object-contain p-1 bg-white" />`;
+      }
+      return `
+        <svg viewBox="0 0 64 64" class="${sizeClass} p-1.5" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="27" fill="none" stroke="#E2E8F0" stroke-width="4"/>
+          <circle cx="32" cy="32" r="14" fill="none" stroke="#F59E0B" stroke-width="4"/>
+          <circle cx="32" cy="11" r="3" fill="#3B82F6"/>
+          <circle cx="53" cy="32" r="3" fill="#3B82F6"/>
+          <circle cx="32" cy="53" r="3" fill="#3B82F6"/>
+          <circle cx="11" cy="32" r="3" fill="#3B82F6"/>
+          <text x="32" y="36" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">IL</text>
+        </svg>`;
+    }
+
+    function renderProductImageHTML(product, extraClass = "w-full h-48") {
+      if (product.customImages && product.customImages.length > 0) {
+        return `<img src="${product.customImages[0]}" alt="${product.name}" class="${extraClass} object-contain bg-white p-2" />`;
+      }
+      return `<div class="${extraClass} flex items-center justify-center bg-gradient-to-b from-slate-50 to-slate-100">${getTechnicalPartSVG(product.visualType, product.partNumber, product.brand)}</div>`;
+    }
+
+    function updateGlobalBadges() {
+      const totalCartItems = state.cart.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById("cart-badge").textContent = totalCartItems;
+      document.getElementById("wishlist-badge").textContent = state.wishlist.length;
+
+      document.getElementById("header-logo-container").innerHTML = renderBrandLogoHTML();
+      document.getElementById("footer-logo-container").innerHTML = renderBrandLogoHTML();
+
+      const accountLabel = document.getElementById("nav-account-label");
+      if (accountLabel) {
+        accountLabel.textContent = state.currentUser ? state.currentUser.name.split(" ")[0] : "Account";
+      }
+    }
+
+    function populateMegaMenus() {
+      const map = [
+        { id: "mega-auto-parts", cat: "Automotive Spare Parts" },
+        { id: "mega-auto-bearings", cat: "Automotive Bearings" },
+        { id: "mega-machinery-bearings", cat: "Machinery Bearings" }
+      ];
+      map.forEach(entry => {
+        const el = document.getElementById(entry.id);
+        if (!el) return;
+        el.innerHTML = CATEGORIES_TAXONOMY[entry.cat].map(sub => `
+          <button onclick="openShopWithFilter('${entry.cat}', '${sub}')" class="text-left px-2.5 py-1.5 rounded-lg hover:bg-royal-50 hover:text-royal-600 transition flex items-center gap-2 text-slate-700 font-medium">
+            <i class="fa-solid fa-angle-right text-[10px] text-royal-500"></i>
+            <span>${sub}</span>
+          </button>
+        `).join("");
+      });
+    }
+
+    /*************************************************************************
+     * 3. NAVIGATION & ROUTER
+     *************************************************************************/
+    function navigate(view, param = null) {
+      state.currentView = view;
+      if (view === 'product' && param) {
+        state.selectedProductId = param;
+        if (!state.recentlyViewed.includes(param)) {
+          state.recentlyViewed.unshift(param);
+          state.recentlyViewed = state.recentlyViewed.slice(0, 6);
+          persistState();
+        }
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      renderCurrentView();
+    }
+
+    function openShopWithFilter(category, subcategory = 'ALL') {
+      state.shopFilters.category = category;
+      state.shopFilters.subcategory = subcategory;
+      state.shopFilters.searchQuery = '';
+      navigate('shop');
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    }
+
+    function handleLiveSearch(query, isMobile = false) {
+      const dropdown = document.getElementById(isMobile ? "mobile-search-dropdown" : "live-search-dropdown");
+      const trimmed = query.trim().toLowerCase();
+      if (!trimmed) {
+        dropdown.classList.add("hidden");
+        return;
+      }
+      const matches = state.products.filter(p =>
+        p.name.toLowerCase().includes(trimmed) ||
+        p.partNumber.toLowerCase().includes(trimmed) ||
+        p.brand.toLowerCase().includes(trimmed) ||
+        p.category.toLowerCase().includes(trimmed) ||
+        p.subcategory.toLowerCase().includes(trimmed)
+      ).slice(0, 6);
+
+      if (matches.length === 0) {
+        dropdown.innerHTML = `<div class="p-4 text-sm text-slate-500 text-center">No exact part match for "<strong>${query}</strong>". Try searching bearing code or brand.</div>`;
+      } else {
+        dropdown.innerHTML = matches.map(p => `
+          <div onclick="document.getElementById('live-search-dropdown').classList.add('hidden'); document.getElementById('mobile-search-dropdown').classList.add('hidden'); navigate('product', '${p.id}')" class="p-3 hover:bg-slate-50 cursor-pointer flex items-center justify-between border-b border-slate-100 last:border-0">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-lg border border-slate-200 overflow-hidden shrink-0">
+                ${renderProductImageHTML(p, "w-full h-full")}
+              </div>
+              <div>
+                <div class="text-xs font-tech font-bold text-royal-600">${p.brand} • ${p.partNumber}</div>
+                <div class="text-sm font-semibold text-slate-800 line-clamp-1">${p.name}</div>
+                <div class="text-[11px] text-slate-500">${p.subcategory}</div>
+              </div>
+            </div>
+            <div class="text-right shrink-0 ml-2">
+              <div class="text-sm font-bold text-navy-900">${formatLKR(p.price)}</div>
+              <span class="text-[10px] px-2 py-0.5 rounded-full ${p.stock > 0 ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'}">
+                ${p.stock > 0 ? `${p.stock} in stock` : 'Out of stock'}
+              </span>
+            </div>
+          </div>
+        `).join("") + `
+          <button onclick="executeSearchSubmit()" class="w-full py-2.5 bg-navy-900 text-white text-xs font-semibold hover:bg-royal-600 transition">
+            View All Search Results &rarr;
+          </button>`;
+      }
+      dropdown.classList.remove("hidden");
+    }
+
+    function executeSearchSubmit() {
+      const val = document.getElementById("global-search-input")?.value || "";
+      document.getElementById("live-search-dropdown").classList.add("hidden");
+      state.shopFilters.category = 'ALL';
+      state.shopFilters.subcategory = 'ALL';
+      state.shopFilters.searchQuery = val;
+      navigate('shop');
+    }
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest("#global-search-input") && !e.target.closest("#live-search-dropdown")) {
+        document.getElementById("live-search-dropdown")?.classList.add("hidden");
+      }
+    });
+
+    /*************************************************************************
+     * 4. CART & WISHLIST ENGINE
+     *************************************************************************/
+    function addToCart(productId, qty = 1) {
+      const product = state.products.find(p => p.id === productId);
+      if (!product) return;
+      if (product.stock <= 0) {
+        showToast("Sorry, this part is currently out of stock.", "error");
+        return;
+      }
+      const existing = state.cart.find(item => item.id === productId);
+      if (existing) {
+        if (existing.qty + qty > product.stock) {
+          showToast(`Only ${product.stock} units available in stock.`, "warning");
+          existing.qty = product.stock;
+        } else {
+          existing.qty += qty;
+        }
+      } else {
+        state.cart.push({ id: productId, qty: Math.min(qty, product.stock) });
+      }
+      persistState();
+      renderCartDrawer();
+      showToast(`Added ${product.partNumber} to cart!`);
+    }
+
+    function updateCartQty(productId, delta) {
+      const item = state.cart.find(i => i.id === productId);
+      const product = state.products.find(p => p.id === productId);
+      if (!item || !product) return;
+      item.qty += delta;
+      if (item.qty <= 0) {
+        state.cart = state.cart.filter(i => i.id !== productId);
+      } else if (item.qty > product.stock) {
+        item.qty = product.stock;
+        showToast(`Maximum available stock (${product.stock}) reached.`, "warning");
+      }
+      persistState();
+      renderCartDrawer();
+      if (state.currentView === 'checkout') renderCurrentView();
+    }
+
+    function removeFromCart(productId) {
+      state.cart = state.cart.filter(i => i.id !== productId);
+      persistState();
+      renderCartDrawer();
+      if (state.currentView === 'checkout') renderCurrentView();
+    }
+
+    function toggleWishlist(productId) {
+      if (state.wishlist.includes(productId)) {
+        state.wishlist = state.wishlist.filter(id => id !== productId);
+        showToast("Removed from saved parts wishlist.", "warning");
+      } else {
+        state.wishlist.push(productId);
+        showToast("Saved to your parts wishlist!");
+      }
+      persistState();
+      renderWishlistDrawer();
+      if (['home', 'shop', 'product'].includes(state.currentView)) {
+        renderCurrentView();
+      }
+    }
+
+    function toggleCartDrawer() {
+      const drawer = document.getElementById("cart-drawer");
+      const overlay = document.getElementById("cart-drawer-overlay");
+      const isClosed = drawer.classList.contains("translate-x-full");
+      if (isClosed) {
+        renderCartDrawer();
+        drawer.classList.remove("translate-x-full");
+        overlay.classList.remove("hidden");
+      } else {
+        drawer.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      }
+    }
+
+    function toggleWishlistDrawer() {
+      const drawer = document.getElementById("wishlist-drawer");
+      const overlay = document.getElementById("wishlist-drawer-overlay");
+      const isClosed = drawer.classList.contains("translate-x-full");
+      if (isClosed) {
+        renderWishlistDrawer();
+        drawer.classList.remove("translate-x-full");
+        overlay.classList.remove("hidden");
+      } else {
+        drawer.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      }
+    }
+
+    function renderCartDrawer() {
+      const itemsContainer = document.getElementById("cart-drawer-items");
+      const footerContainer = document.getElementById("cart-drawer-footer");
+
+      if (state.cart.length === 0) {
+        itemsContainer.innerHTML = `
+          <div class="text-center py-16">
+            <div class="w-16 h-16 rounded-full bg-silver-100 text-silver-500 flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h3 class="font-semibold text-slate-800 mb-1">Your Cart is Empty</h3>
+            <p class="text-sm text-slate-500 mb-5">Browse our automotive spare parts & industrial bearings.</p>
+            <button onclick="toggleCartDrawer(); navigate('shop');" class="bg-royal-600 hover:bg-royal-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition">
+              Explore Catalogue
+            </button>
+          </div>`;
+        footerContainer.innerHTML = "";
+        return;
+      }
+
+      let subtotal = 0;
+      itemsContainer.innerHTML = state.cart.map(item => {
+        const p = state.products.find(prod => prod.id === item.id);
+        if (!p) return "";
+        const lineTotal = p.price * item.qty;
+        subtotal += lineTotal;
+        return `
+          <div class="flex gap-3 p-3 rounded-xl border border-silver-200 bg-white shadow-xs">
+            <div class="w-16 h-16 rounded-lg border border-silver-200 overflow-hidden shrink-0">
+              ${renderProductImageHTML(p, "w-full h-full")}
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="text-[11px] font-tech font-bold text-royal-600">${p.brand} • ${p.partNumber}</div>
+              <h4 class="text-sm font-semibold text-slate-900 truncate">${p.name}</h4>
+              <div class="text-sm font-bold text-navy-900 mt-1">${formatLKR(lineTotal)}</div>
+              <div class="flex items-center justify-between mt-2">
+                <div class="inline-flex items-center border border-silver-300 rounded-lg overflow-hidden">
+                  <button onclick="updateCartQty('${p.id}', -1)" class="px-2.5 py-1 bg-silver-100 hover:bg-silver-200 text-xs font-bold">-</button>
+                  <span class="px-3 py-1 text-xs font-semibold">${item.qty}</span>
+                  <button onclick="updateCartQty('${p.id}', 1)" class="px-2.5 py-1 bg-silver-100 hover:bg-silver-200 text-xs font-bold">+</button>
+                </div>
+                <button onclick="removeFromCart('${p.id}')" class="text-xs text-red-500 hover:text-red-700 font-medium">
+                  <i class="fa-solid fa-trash-can"></i> Remove
+                </button>
+              </div>
+            </div>
+          </div>`;
+      }).join("");
+
+      footerContainer.innerHTML = `
+        <div class="space-y-2 text-sm mb-4">
+          <div class="flex justify-between text-slate-600">
+            <span>Subtotal</span>
+            <span class="font-semibold text-slate-900">${formatLKR(subtotal)}</span>
+          </div>
+          <div class="flex justify-between text-slate-500 text-xs">
+            <span>Delivery / Panchikawatta Pickup</span>
+            <span>Calculated at checkout</span>
+          </div>
+        </div>
+        <button onclick="toggleCartDrawer(); navigate('checkout');" class="w-full bg-royal-600 hover:bg-royal-500 text-white py-3 rounded-xl font-bold text-sm shadow-lg transition flex items-center justify-center gap-2">
+          <span>Proceed to Checkout</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>`;
+    }
+
+    function renderWishlistDrawer() {
+      const container = document.getElementById("wishlist-drawer-items");
+      if (state.wishlist.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-16">
+            <i class="fa-regular fa-heart text-4xl text-silver-400 mb-3"></i>
+            <p class="text-sm text-slate-500">No saved items yet. Click the heart icon on any part to save it for later.</p>
+          </div>`;
+        return;
+      }
+      container.innerHTML = state.wishlist.map(id => {
+        const p = state.products.find(prod => prod.id === id);
+        if (!p) return "";
+        return `
+          <div class="flex items-center gap-3 p-3 rounded-xl border border-silver-200">
+            <div class="w-14 h-14 rounded-lg border border-silver-200 overflow-hidden shrink-0">
+              ${renderProductImageHTML(p, "w-full h-full")}
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="text-[11px] font-tech font-bold text-royal-600">${p.partNumber}</div>
+              <div class="text-sm font-semibold text-slate-900 truncate">${p.name}</div>
+              <div class="text-xs font-bold text-navy-900">${formatLKR(p.price)}</div>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <button onclick="addToCart('${p.id}', 1)" class="px-2.5 py-1.5 bg-royal-600 text-white rounded-lg text-xs font-semibold hover:bg-royal-500">
+                + Cart
+              </button>
+              <button onclick="toggleWishlist('${p.id}')" class="px-2.5 py-1 text-red-500 text-xs hover:underline">
+                Remove
+              </button>
+            </div>
+          </div>`;
+      }).join("");
+    }
+
+    /*************************************************************************
+     * 5. REUSABLE PRODUCT CARD & QUICK VIEW MODAL
+     *************************************************************************/
+    function renderProductCard(product) {
+      const isWishlisted = state.wishlist.includes(product.id);
+      const stockBadge = product.stock === 0
+        ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-100 text-red-700">Out of Stock</span>`
+        : product.stock <= 10
+          ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800">Low Stock (${product.stock})</span>`
+          : `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700">In Stock (${product.stock})</span>`;
+
+      return `
+        <div class="group bg-white rounded-2xl border border-silver-200 hover:border-royal-400 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+          <!-- Card Top Media & Badges -->
+          <div class="relative overflow-hidden bg-slate-50 border-b border-silver-100">
+            <div onclick="navigate('product', '${product.id}')" class="cursor-pointer transition-transform duration-300 group-hover:scale-105">
+              ${renderProductImageHTML(product, "w-full h-48")}
+            </div>
+
+            <!-- Top Left Tags -->
+            <div class="absolute top-3 left-3 flex flex-col gap-1">
+              ${product.bestSeller ? `<span class="bg-amber-500 text-navy-950 font-bold text-[10px] px-2.5 py-0.5 rounded-full shadow-xs uppercase tracking-wider">Best Seller</span>` : ''}
+              <span class="bg-navy-900/90 text-white font-tech font-bold text-xs px-2.5 py-0.5 rounded-md">${product.brand}</span>
+            </div>
+
+            <!-- Top Right Wishlist & Quick View -->
+            <div class="absolute top-3 right-3 flex flex-col gap-1.5">
+              <button onclick="toggleWishlist('${product.id}')" class="w-8 h-8 rounded-full bg-white/95 shadow-md flex items-center justify-center hover:scale-110 transition ${isWishlisted ? 'text-red-500' : 'text-slate-500 hover:text-red-500'}" title="Wishlist">
+                <i class="fa-${isWishlisted ? 'solid' : 'regular'} fa-heart text-sm"></i>
+              </button>
+              <button onclick="openQuickViewModal('${product.id}')" class="w-8 h-8 rounded-full bg-white/95 shadow-md flex items-center justify-center text-slate-600 hover:text-royal-600 hover:scale-110 transition" title="Quick View">
+                <i class="fa-regular fa-eye text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-4 flex-1 flex flex-col">
+            <div class="flex items-center justify-between gap-2 mb-1">
+              <span class="text-[11px] font-semibold text-royal-600 truncate">${product.subcategory}</span>
+              ${stockBadge}
+            </div>
+            <div class="font-tech text-xs font-bold text-slate-500 tracking-wider uppercase mb-0.5">Part #: ${product.partNumber}</div>
+            <h3 onclick="navigate('product', '${product.id}')" class="font-display font-bold text-slate-900 text-base leading-snug hover:text-royal-600 cursor-pointer line-clamp-2 mb-3">
+              ${product.name}
+            </h3>
+
+            <div class="mt-auto pt-3 border-t border-silver-100">
+              <div class="flex items-baseline gap-2 mb-3">
+                <span class="text-lg font-extrabold text-navy-900">${formatLKR(product.price)}</span>
+                ${product.oldPrice ? `<span class="text-xs text-slate-400 line-through">${formatLKR(product.oldPrice)}</span>` : ''}
+              </div>
+              <div class="flex gap-2">
+                <button
+                  onclick="addToCart('${product.id}', 1)"
+                  ${product.stock === 0 ? 'disabled' : ''}
+                  class="flex-1 py-2.5 px-3 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 ${product.stock === 0 ? 'bg-slate-200 text-slate-400 cursor-not-allowed' : 'bg-royal-600 hover:bg-royal-500 text-white shadow-sm'}"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <span>Add to Cart</span>
+                </button>
+                <button onclick="navigate('product', '${product.id}')" class="px-3 py-2.5 rounded-xl border border-silver-300 hover:border-navy-900 text-slate-700 hover:text-navy-900 text-xs font-semibold transition">
+                  Specs
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function openQuickViewModal(productId) {
+      const p = state.products.find(prod => prod.id === productId);
+      if (!p) return;
+      const specsRows = Object.entries(p.specs || {}).map(([k, v]) => `
+        <tr class="border-b border-slate-100">
+          <td class="py-1.5 text-xs text-slate-500 font-medium">${k}</td>
+          <td class="py-1.5 text-xs text-slate-900 font-semibold text-right">${v}</td>
+        </tr>`).join("");
+
+      openModal(`
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-royal-600">${p.category} &bull; ${p.subcategory}</span>
+              <h2 class="font-display font-bold text-xl text-navy-900 mt-0.5">${p.name}</h2>
+            </div>
+            <button onclick="closeModal()" class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="rounded-xl border border-silver-200 overflow-hidden bg-slate-50 flex items-center justify-center">
+              ${renderProductImageHTML(p, "w-full h-64")}
+            </div>
+            <div>
+              <div class="inline-block px-2.5 py-1 rounded-md bg-navy-900 text-white font-tech font-bold text-sm mb-2">
+                ${p.brand} | PART NO: ${p.partNumber}
+              </div>
+              <div class="text-2xl font-extrabold text-navy-900 mb-2">${formatLKR(p.price)}</div>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">${p.description}</p>
+              <table class="w-full mb-5">${specsRows}</table>
+              <div class="flex gap-2.5">
+                <button onclick="addToCart('${p.id}', 1); closeModal();" class="flex-1 bg-royal-600 hover:bg-royal-500 text-white py-3 rounded-xl font-bold text-sm transition">
+                  <i class="fa-solid fa-cart-plus mr-1.5"></i> Add to Cart
+                </button>
+                <button onclick="closeModal(); navigate('product', '${p.id}');" class="px-4 py-3 rounded-xl border border-silver-300 hover:bg-slate-50 text-sm font-semibold">
+                  Full Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `);
+    }
+
+    function openModal(htmlContent) {
+      document.getElementById("global-modal-content").innerHTML = htmlContent;
+      document.getElementById("global-modal-overlay").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("global-modal-overlay").classList.add("hidden");
+    }
+
+    /*************************************************************************
+     * 6. VIEW RENDERERS (HOME, SHOP, PRODUCT DETAILS, CHECKOUT, ACCOUNT, TRACK, ABOUT, CONTACT, ADMIN)
+     *************************************************************************/
+    function renderCurrentView() {
+      const viewport = document.getElementById("app-viewport");
+      switch (state.currentView) {
+        case 'home': viewport.innerHTML = renderHomeView(); break;
+        case 'shop': viewport.innerHTML = renderShopView(); break;
+        case 'product': viewport.innerHTML = renderProductDetailView(); break;
+        case 'checkout': viewport.innerHTML = renderCheckoutView(); break;
+        case 'account': viewport.innerHTML = renderAccountView(); break;
+        case 'track': viewport.innerHTML = renderTrackOrderView(); break;
+        case 'about': viewport.innerHTML = renderAboutView(); break;
+        case 'contact': viewport.innerHTML = renderContactView(); break;
+        case 'admin': viewport.innerHTML = renderAdminView(); break;
+        default: viewport.innerHTML = renderHomeView();
+      }
+      updateGlobalBadges();
+    }
+
+    /* ---------------- 6A. HOMEPAGE VIEW ---------------- */
+    function renderHomeView() {
+      const featuredProducts = state.products.filter(p => p.featured).slice(0, 4);
+      const bestBearings = state.products.filter(p => p.category.includes("Bearings")).slice(0, 4);
+      const heroCustomBg = state.branding.heroBannerDataUrl
+        ? `style="background-image: linear-gradient(to right, rgba(10, 25, 47, 0.94), rgba(10, 25, 47, 0.78)), url('${state.branding.heroBannerDataUrl}'); background-size: cover; background-position: center;"`
+        : "";
+
+      return `
+        <!-- HERO BANNER -->
+        <section ${heroCustomBg} class="metallic-gradient tech-grid-bg text-white relative overflow-hidden">
+          <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-royal-600/30 border border-royal-400/40 text-xs font-semibold text-amber-400 tracking-wide">
+                <i class="fa-solid fa-gear fa-spin"></i>
+                <span>SRI LANKA'S PREMIER BEARING & AUTO PARTS HUB • COLOMBO 10</span>
+              </div>
+
+              <h1 class="font-tech font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight uppercase">
+                YOUR TRUSTED PARTNER FOR <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-white">QUALITY SPARE PARTS & BEARINGS</span>
+              </h1>
+
+              <p class="text-base sm:text-lg text-silver-300 max-w-2xl leading-relaxed">
+                Discover quality automotive spare parts, automotive bearings and industrial machinery bearings at <strong class="text-white">INTOR LANKA</strong>. Genuine Japanese & European OEM brands delivered islandwide.
+              </p>
+
+              <div class="flex flex-wrap gap-3.5 pt-2">
+                <button onclick="openShopWithFilter('ALL', 'ALL')" class="bg-royal-600 hover:bg-royal-500 text-white px-7 py-3.5 rounded-xl font-bold text-sm shadow-xl shadow-royal-600/30 transition flex items-center gap-2">
+                  <span>SHOP NOW</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button onclick="openShopWithFilter('Automotive Bearings', 'ALL')" class="bg-white text-navy-900 hover:bg-silver-200 px-6 py-3.5 rounded-xl font-bold text-sm transition">
+                  EXPLORE PRODUCTS
+                </button>
+                <button onclick="navigate('contact')" class="bg-navy-800/80 hover:bg-navy-700 text-white border border-silver-400/30 px-6 py-3.5 rounded-xl font-semibold text-sm transition">
+                  CONTACT US
+                </button>
+              </div>
+
+              <!-- Quick Brand Strip -->
+              <div class="pt-6 border-t border-white/10">
+                <div class="text-[11px] uppercase tracking-widest text-silver-400 mb-2.5">Authorized & Genuine Stock Brands</div>
+                <div class="flex flex-wrap gap-2.5 font-tech font-bold text-sm text-silver-200">
+                  <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10">SKF</span>
+                  <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10">NSK</span>
+                  <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10">KOYO</span>
+                  <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10">NTN</span>
+                  <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10">DENSO</span>
+                  <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10">BREMBO</span>
+                  <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10">AISIN</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Engineering Visual Panel -->
+            <div class="lg:col-span-5">
+              <div class="bg-navy-800/70 backdrop-blur-md border border-silver-400/20 rounded-3xl p-6 shadow-2xl">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="font-tech font-bold text-amber-400 uppercase tracking-wider text-sm">Quick Bearing & Part Finder</span>
+                  <span class="text-xs text-silver-400">Live Stock LKR</span>
+                </div>
+                <div class="space-y-3">
+                  <div>
+                    <label class="block text-xs text-silver-300 mb-1">Main Division</label>
+                    <select id="hero-cat-select" onchange="updateHeroSubcatSelect()" class="w-full bg-navy-900 border border-navy-700 rounded-xl px-3.5 py-2.5 text-sm text-white">
+                      <option value="ALL">All Divisions (Spare Parts & Bearings)</option>
+                      <option value="Automotive Spare Parts">Automotive Spare Parts</option>
+                      <option value="Automotive Bearings">Automotive Bearings</option>
+                      <option value="Machinery Bearings">Machinery Bearings</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs text-silver-300 mb-1">Subcategory</label>
+                    <select id="hero-subcat-select" class="w-full bg-navy-900 border border-navy-700 rounded-xl px-3.5 py-2.5 text-sm text-white">
+                      <option value="ALL">All Subcategories</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs text-silver-300 mb-1">Part Number or Keyword</label>
+                    <input type="text" id="hero-keyword-input" placeholder="e.g., 6205, UCP208, Brake Pad, Toyota..." class="w-full bg-navy-900 border border-navy-700 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-silver-500" />
+                  </div>
+                  <button onclick="submitHeroFinder()" class="w-full bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold py-3 rounded-xl text-sm transition shadow-lg">
+                    <i class="fa-solid fa-magnifying-glass mr-1.5"></i> Find Matching Parts
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 MAIN FEATURED CATEGORIES GRID -->
+        <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div onclick="openShopWithFilter('Automotive Spare Parts', 'ALL')" class="cursor-pointer bg-white rounded-2xl p-6 shadow-xl border border-silver-200 hover:border-royal-500 transition group">
+              <div class="w-12 h-12 rounded-xl bg-royal-600/10 text-royal-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-royal-600 group-hover:text-white transition">
+                <i class="fa-solid fa-car-battery"></i>
+              </div>
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase">Automotive Spare Parts</h2>
+              <p class="text-sm text-slate-600 mt-1.5 mb-4">Engine parts, brake systems, suspension, clutch kits, filters, belts & electrical components.</p>
+              <span class="text-xs font-bold text-royal-600 flex items-center gap-1.5">
+                Browse 10 Subcategories <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+
+            <div onclick="openShopWithFilter('Automotive Bearings', 'ALL')" class="cursor-pointer bg-white rounded-2xl p-6 shadow-xl border border-silver-200 hover:border-royal-500 transition group">
+              <div class="w-12 h-12 rounded-xl bg-amber-500/15 text-amber-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-amber-500 group-hover:text-navy-950 transition">
+                <i class="fa-solid fa-dharmachakra"></i>
+              </div>
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase">Automotive Bearings</h2>
+              <p class="text-sm text-slate-600 mt-1.5 mb-4">Deep groove ball, tapered roller, wheel hub bearings, clutch release & alternator bearings.</p>
+              <span class="text-xs font-bold text-royal-600 flex items-center gap-1.5">
+                Browse 8 Subcategories <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+
+            <div onclick="openShopWithFilter('Machinery Bearings', 'ALL')" class="cursor-pointer bg-white rounded-2xl p-6 shadow-xl border border-silver-200 hover:border-royal-500 transition group">
+              <div class="w-12 h-12 rounded-xl bg-navy-900/10 text-navy-900 flex items-center justify-center text-2xl mb-4 group-hover:bg-navy-900 group-hover:text-white transition">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase">Machinery Bearings</h2>
+              <p class="text-sm text-slate-600 mt-1.5 mb-4">Spherical roller, cylindrical roller, thrust bearings, pillow blocks & heavy industrial units.</p>
+              <span class="text-xs font-bold text-royal-600 flex items-center gap-1.5">
+                Browse 8 Subcategories <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- POPULAR PRODUCTS -->
+        <section class="max-w-7xl mx-auto px-4 pt-16">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-3">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-royal-600">Featured Inventory</span>
+              <h2 class="font-tech font-bold text-3xl text-navy-900 uppercase">Popular Spare Parts & Bearings</h2>
+            </div>
+            <button onclick="openShopWithFilter('ALL', 'ALL')" class="text-sm font-bold text-royal-600 hover:text-navy-900 flex items-center gap-1.5">
+              View Full Catalogue <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            ${featuredProducts.map(renderProductCard).join("")}
+          </div>
+        </section>
+
+        <!-- SPECIAL PROMO & BULK SUPPLY BANNER -->
+        <section class="max-w-7xl mx-auto px-4 pt-16">
+          <div class="rounded-3xl metallic-gradient p-8 md:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl border border-royal-500/30">
+            <div class="space-y-3 max-w-2xl">
+              <span class="inline-block px-3 py-1 rounded-full bg-amber-500 text-navy-950 font-bold text-xs uppercase tracking-wider">
+                Special Workshop & Factory Offer
+              </span>
+              <h2 class="font-tech font-bold text-3xl sm:text-4xl uppercase">
+                Bulk Industrial Bearings & Garage Fleet Accounts
+              </h2>
+              <p class="text-silver-300 text-sm sm:text-base">
+                Operating a service center, tea factory, rice mill, or fleet? Get priority wholesale LKR pricing and same-day dispatch from our 156 Panchikawatta Road warehouse.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-3 shrink-0">
+              <button onclick="navigate('contact')" class="bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold px-6 py-3.5 rounded-xl text-sm transition shadow-lg">
+                Request Bulk Quote
+              </button>
+              <a href="tel:+94112470490" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-6 py-3.5 rounded-xl text-sm transition">
+                Call 0112 470 490
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- BEST-SELLING BEARINGS -->
+        <section class="max-w-7xl mx-auto px-4 pt-16">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-3">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Precision Engineering</span>
+              <h2 class="font-tech font-bold text-3xl text-navy-900 uppercase">Best-Selling Automotive & Industrial Bearings</h2>
+            </div>
+            <button onclick="openShopWithFilter('Automotive Bearings', 'ALL')" class="text-sm font-bold text-royal-600 hover:text-navy-900 flex items-center gap-1.5">
+              All Bearings <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            ${bestBearings.map(renderProductCard).join("")}
+          </div>
+        </section>
+
+        <!-- WHY CHOOSE INTOR LANKA -->
+        <section class="max-w-7xl mx-auto px-4 pt-16">
+          <div class="bg-white rounded-3xl p-8 md:p-12 border border-silver-200 shadow-xs">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+              <span class="text-xs font-bold uppercase tracking-widest text-royal-600">Why Choose Us</span>
+              <h2 class="font-tech font-bold text-3xl text-navy-900 uppercase mt-1">Trusted Across Sri Lanka Since Day One</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div class="p-5 rounded-2xl bg-silver-100/70 border border-silver-200">
+                <i class="fa-solid fa-certificate text-2xl text-royal-600 mb-3"></i>
+                <h3 class="font-bold text-navy-900 mb-1">100% Genuine OEM Parts</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">Direct-sourced authentic bearings and spare parts from SKF, NSK, NTN, KOYO, DENSO & AISIN.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-silver-100/70 border border-silver-200">
+                <i class="fa-solid fa-truck-fast text-2xl text-amber-500 mb-3"></i>
+                <h3 class="font-bold text-navy-900 mb-1">Islandwide Express Delivery</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">Same-day delivery in Colombo & suburbs, 24–48 hour courier service across all 25 districts.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-silver-100/70 border border-silver-200">
+                <i class="fa-solid fa-store text-2xl text-royal-600 mb-3"></i>
+                <h3 class="font-bold text-navy-900 mb-1">Panchikawatta Flagship</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">Convenient in-store pickup and technical counter consultation at 156 Panchikawatta Road.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-silver-100/70 border border-silver-200">
+                <i class="fa-solid fa-shield-halved text-2xl text-emerald-600 mb-3"></i>
+                <h3 class="font-bold text-navy-900 mb-1">Flexible Secure Payments</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">Pay conveniently via Cash on Delivery (COD) or secure VISA / Mastercard online checkout.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CUSTOMER TESTIMONIALS -->
+        <section class="max-w-7xl mx-auto px-4 pt-16">
+          <h2 class="font-tech font-bold text-3xl text-navy-900 uppercase mb-6">Verified Customer & Workshop Reviews</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            ${state.reviews.slice(0, 3).map(r => `
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <div class="flex items-center gap-1 text-amber-500 text-sm mb-3">
+                  ${'<i class="fa-solid fa-star"></i>'.repeat(r.rating)}
+                </div>
+                <p class="text-sm text-slate-700 italic mb-4">"${r.comment}"</p>
+                <div class="text-xs font-bold text-navy-900">${r.author}</div>
+                <div class="text-[11px] text-slate-400">${r.date}</div>
+              </div>
+            `).join("")}
+          </div>
+        </section>
+      `;
+    }
+
+    function updateHeroSubcatSelect() {
+      const cat = document.getElementById("hero-cat-select").value;
+      const subSelect = document.getElementById("hero-subcat-select");
+      if (cat === "ALL") {
+        subSelect.innerHTML = `<option value="ALL">All Subcategories</option>`;
+        return;
+      }
+      subSelect.innerHTML = `<option value="ALL">All ${cat}</option>` +
+        CATEGORIES_TAXONOMY[cat].map(s => `<option value="${s}">${s}</option>`).join("");
+    }
+
+    function submitHeroFinder() {
+      const cat = document.getElementById("hero-cat-select").value;
+      const sub = document.getElementById("hero-subcat-select").value;
+      const kw = document.getElementById("hero-keyword-input").value;
+      state.shopFilters.category = cat;
+      state.shopFilters.subcategory = sub;
+      state.shopFilters.searchQuery = kw;
+      navigate('shop');
+    }
+
+    /* ---------------- 6B. SHOP & MULTI-LEVEL FILTER VIEW ---------------- */
+    function renderShopView() {
+      const f = state.shopFilters;
+      const allBrands = [...new Set(state.products.map(p => p.brand))].sort();
+
+      let filtered = state.products.filter(p => {
+        if (f.category !== 'ALL' && p.category !== f.category) return false;
+        if (f.subcategory !== 'ALL' && p.subcategory !== f.subcategory) return false;
+        if (f.brand !== 'ALL' && p.brand !== f.brand) return false;
+        if (p.price > f.maxPrice) return false;
+        if (f.inStockOnly && p.stock <= 0) return false;
+        if (f.searchQuery) {
+          const q = f.searchQuery.toLowerCase();
+          const match = p.name.toLowerCase().includes(q) ||
+            p.partNumber.toLowerCase().includes(q) ||
+            p.brand.toLowerCase().includes(q) ||
+            p.subcategory.toLowerCase().includes(q);
+          if (!match) return false;
+        }
+        return true;
+      });
+
+      if (f.sortBy === 'price-asc') filtered.sort((a, b) => a.price - b.price);
+      else if (f.sortBy === 'price-desc') filtered.sort((a, b) => b.price - a.price);
+      else if (f.sortBy === 'bestselling') filtered.sort((a, b) => (b.bestSeller ? 1 : 0) - (a.bestSeller ? 1 : 0));
+      else if (f.sortBy === 'newest') filtered.sort((a, b) => b.id.localeCompare(a.id));
+
+      const availableSubcats = f.category !== 'ALL' ? CATEGORIES_TAXONOMY[f.category] : [];
+
+      return `
+        <div class="bg-navy-900 text-white py-8 px-4 border-b border-navy-800">
+          <div class="max-w-7xl mx-auto">
+            <div class="text-xs text-silver-400 mb-1">
+              <button onclick="navigate('home')" class="hover:text-white">Home</button> / <span>Catalogue</span>
+              ${f.category !== 'ALL' ? ` / <span class="text-amber-400">${f.category}</span>` : ''}
+              ${f.subcategory !== 'ALL' ? ` / <span class="text-white">${f.subcategory}</span>` : ''}
+            </div>
+            <h1 class="font-tech font-bold text-3xl sm:text-4xl uppercase">
+              ${f.subcategory !== 'ALL' ? f.subcategory : f.category !== 'ALL' ? f.category : 'All Spare Parts & Bearings'}
+            </h1>
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- FILTER SIDEBAR -->
+          <aside class="lg:col-span-3 space-y-6">
+            <div class="bg-white p-5 rounded-2xl border border-silver-200 shadow-xs space-y-5">
+              <div class="flex items-center justify-between border-b border-silver-200 pb-3">
+                <h2 class="font-tech font-bold text-lg text-navy-900 uppercase">Filter Catalogue</h2>
+                <button onclick="resetShopFilters()" class="text-xs text-royal-600 hover:underline font-semibold">Reset All</button>
+              </div>
+
+              <!-- Search inside Shop -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Part Number / Keyword</label>
+                <input
+                  type="text"
+                  value="${f.searchQuery}"
+                  oninput="state.shopFilters.searchQuery = this.value; renderCurrentView();"
+                  placeholder="e.g. 6205, SKF, Brake..."
+                  class="w-full border border-silver-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-royal-500"
+                />
+              </div>
+
+              <!-- Main Category -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Main Category</label>
+                <select onchange="state.shopFilters.category = this.value; state.shopFilters.subcategory = 'ALL'; renderCurrentView();" class="w-full border border-silver-300 rounded-xl px-3 py-2 text-sm bg-white">
+                  <option value="ALL" ${f.category === 'ALL' ? 'selected' : ''}>All Categories</option>
+                  ${Object.keys(CATEGORIES_TAXONOMY).map(c => `<option value="${c}" ${f.category === c ? 'selected' : ''}>${c}</option>`).join("")}
+                </select>
+              </div>
+
+              <!-- Subcategory -->
+              ${availableSubcats.length > 0 ? `
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">Subcategory</label>
+                  <select onchange="state.shopFilters.subcategory = this.value; renderCurrentView();" class="w-full border border-silver-300 rounded-xl px-3 py-2 text-sm bg-white">
+                    <option value="ALL">All Subcategories</option>
+                    ${availableSubcats.map(s => `<option value="${s}" ${f.subcategory === s ? 'selected' : ''}>${s}</option>`).join("")}
+                  </select>
+                </div>
+              ` : ''}
+
+              <!-- Brand Filter -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Brand / Manufacturer</label>
+                <select onchange="state.shopFilters.brand = this.value; renderCurrentView();" class="w-full border border-silver-300 rounded-xl px-3 py-2 text-sm bg-white">
+                  <option value="ALL">All Brands</option>
+                  ${allBrands.map(b => `<option value="${b}" ${f.brand === b ? 'selected' : ''}>${b}</option>`).join("")}
+                </select>
+              </div>
+
+              <!-- Max Price Range (LKR) -->
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-700 mb-1.5">
+                  <span>Max Price (LKR)</span>
+                  <span class="text-royal-600">${formatLKR(f.maxPrice)}</span>
+                </div>
+                <input
+                  type="range"
+                  min="1000"
+                  max="50000"
+                  step="500"
+                  value="${f.maxPrice}"
+                  onchange="state.shopFilters.maxPrice = Number(this.value); renderCurrentView();"
+                  class="w-full accent-royal-600"
+                />
+              </div>
+
+              <!-- Stock Availability -->
+              <label class="flex items-center gap-2.5 text-sm text-slate-700 cursor-pointer pt-1">
+                <input
+                  type="checkbox"
+                  ${f.inStockOnly ? 'checked' : ''}
+                  onchange="state.shopFilters.inStockOnly = this.checked; renderCurrentView();"
+                  class="rounded text-royal-600 w-4 h-4"
+                />
+                <span>In-Stock Items Only</span>
+              </label>
+            </div>
+          </aside>
+
+          <!-- PRODUCT GRID AREA -->
+          <div class="lg:col-span-9">
+            <div class="bg-white p-4 rounded-2xl border border-silver-200 mb-6 flex flex-wrap items-center justify-between gap-4">
+              <div class="text-sm text-slate-600">
+                Showing <strong class="text-navy-900">${filtered.length}</strong> genuine parts & bearings
+              </div>
+              <div class="flex items-center gap-2">
+                <label class="text-xs font-semibold text-slate-500">Sort By:</label>
+                <select onchange="state.shopFilters.sortBy = this.value; renderCurrentView();" class="border border-silver-300 rounded-xl px-3 py-1.5 text-sm bg-white">
+                  <option value="featured" ${f.sortBy === 'featured' ? 'selected' : ''}>Featured Relevance</option>
+                  <option value="bestselling" ${f.sortBy === 'bestselling' ? 'selected' : ''}>Best Selling</option>
+                  <option value="price-asc" ${f.sortBy === 'price-asc' ? 'selected' : ''}>Price: Low to High (LKR)</option>
+                  <option value="price-desc" ${f.sortBy === 'price-desc' ? 'selected' : ''}>Price: High to Low (LKR)</option>
+                  <option value="newest" ${f.sortBy === 'newest' ? 'selected' : ''}>Newest Arrivals</option>
+                </select>
+              </div>
+            </div>
+
+            ${filtered.length === 0 ? `
+              <div class="bg-white rounded-2xl p-12 text-center border border-silver-200">
+                <i class="fa-solid fa-magnifying-glass text-4xl text-silver-400 mb-3"></i>
+                <h3 class="font-bold text-lg text-navy-900">No Matching Parts Found</h3>
+                <p class="text-sm text-slate-500 mt-1 mb-4">Try adjusting your category, price range, or part number filter.</p>
+                <button onclick="resetShopFilters()" class="bg-royal-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold">Reset Filters</button>
+              </div>
+            ` : `
+              <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                ${filtered.map(renderProductCard).join("")}
+              </div>
+            `}
+          </div>
+        </div>
+      `;
+    }
+
+    function resetShopFilters() {
+      state.shopFilters = {
+        category: 'ALL',
+        subcategory: 'ALL',
+        brand: 'ALL',
+        maxPrice: 50000,
+        inStockOnly: false,
+        searchQuery: '',
+        sortBy: 'featured'
+      };
+      renderCurrentView();
+    }
+
+    /* ---------------- 6C. PRODUCT DETAILS VIEW ---------------- */
+    function renderProductDetailView() {
+      const p = state.products.find(item => item.id === state.selectedProductId) || state.products[0];
+      if (!p) return renderShopView();
+
+      const productReviews = state.reviews.filter(r => r.productId === p.id);
+      const relatedProducts = state.products.filter(item => item.category === p.category && item.id !== p.id).slice(0, 4);
+      const recentProducts = state.recentlyViewed.map(id => state.products.find(item => item.id === id)).filter(Boolean).slice(0, 4);
+
+      const specsTable = Object.entries(p.specs || {}).map(([key, val]) => `
+        <tr class="border-b border-silver-200 even:bg-slate-50">
+          <td class="py-3 px-4 text-xs sm:text-sm font-semibold text-slate-600 w-1/2">${key}</td>
+          <td class="py-3 px-4 text-xs sm:text-sm font-bold text-navy-900">${val}</td>
+        </tr>`).join("");
+
+      return `
+        <div class="max-w-7xl mx-auto px-4 py-8">
+          <!-- Breadcrumb -->
+          <div class="text-xs text-slate-500 mb-6 flex flex-wrap items-center gap-1.5">
+            <button onclick="navigate('home')" class="hover:text-royal-600">Home</button>
+            <span>/</span>
+            <button onclick="openShopWithFilter('${p.category}', 'ALL')" class="hover:text-royal-600">${p.category}</button>
+            <span>/</span>
+            <button onclick="openShopWithFilter('${p.category}', '${p.subcategory}')" class="hover:text-royal-600">${p.subcategory}</button>
+            <span>/</span>
+            <span class="text-navy-900 font-semibold">${p.partNumber}</span>
+          </div>
+
+          <!-- Main Product Grid -->
+          <div class="bg-white rounded-3xl border border-silver-200 p-6 md:p-10 shadow-xs grid grid-cols-1 lg:grid-cols-12 gap-10">
+            <!-- Left Gallery with Hover Zoom -->
+            <div class="lg:col-span-5">
+              <div class="zoom-container rounded-2xl border border-silver-200 bg-slate-50 h-80 sm:h-96 flex items-center justify-center relative">
+                <div id="pdp-main-media" class="w-full h-full flex items-center justify-center">
+                  ${renderProductImageHTML(p, "w-full h-full")}
+                </div>
+                <span class="absolute bottom-3 right-3 bg-navy-900/80 text-white text-[10px] px-2.5 py-1 rounded-full">
+                  <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Hover to Zoom
+                </span>
+              </div>
+              ${p.customImages && p.customImages.length > 1 ? `
+                <div class="flex gap-2.5 mt-3">
+                  ${p.customImages.map((imgUrl, idx) => `
+                    <button onclick="document.getElementById('pdp-main-media').innerHTML = '<img src=\\'${imgUrl}\\' class=\\'w-full h-full object-contain p-2\\' />'" class="w-16 h-16 rounded-xl border border-silver-300 overflow-hidden hover:border-royal-600">
+                      <img src="${imgUrl}" alt="Thumb ${idx + 1}" class="w-full h-full object-cover" />
+                    </button>
+                  `).join("")}
+                </div>
+              ` : ''}
+            </div>
+
+            <!-- Right Info & Buy Controls -->
+            <div class="lg:col-span-7 flex flex-col">
+              <div class="flex flex-wrap items-center gap-2 mb-2">
+                <span class="px-3 py-1 rounded-lg bg-navy-900 text-white font-tech font-bold text-sm">${p.brand}</span>
+                <span class="px-3 py-1 rounded-lg bg-royal-50 text-royal-700 font-tech font-bold text-sm border border-royal-200">PART #: ${p.partNumber}</span>
+                ${p.stock > 0
+                  ? `<span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold"><i class="fa-solid fa-check-circle mr-1"></i> ${p.stock} Units Available</span>`
+                  : `<span class="px-3 py-1 rounded-full bg-red-100 text-red-700 text-xs font-bold">Out of Stock</span>`}
+              </div>
+
+              <h1 class="font-display font-extrabold text-2xl sm:text-3xl text-navy-900 leading-tight mb-3">
+                ${p.name}
+              </h1>
+
+              <div class="flex items-baseline gap-3 mb-5 pb-5 border-b border-silver-200">
+                <span class="text-3xl font-extrabold text-royal-600">${formatLKR(p.price)}</span>
+                ${p.oldPrice ? `<span class="text-base text-slate-400 line-through">${formatLKR(p.oldPrice)}</span>` : ''}
+                <span class="text-xs text-slate-500 ml-auto">Inclusive of VAT • Sri Lanka LKR</span>
+              </div>
+
+              <p class="text-sm text-slate-600 leading-relaxed mb-6">${p.description}</p>
+
+              <!-- Quantity + Add to Cart + Buy Now -->
+              <div class="flex flex-wrap items-center gap-3 mb-6">
+                <div class="inline-flex items-center border border-silver-300 rounded-xl overflow-hidden bg-slate-50">
+                  <button onclick="adjustPdpQty(-1)" class="px-4 py-3 hover:bg-silver-200 font-bold text-slate-700">-</button>
+                  <input type="number" id="pdp-qty-input" value="1" min="1" max="${Math.max(1, p.stock)}" class="w-14 text-center font-bold text-sm bg-transparent focus:outline-none" />
+                  <button onclick="adjustPdpQty(1, ${p.stock})" class="px-4 py-3 hover:bg-silver-200 font-bold text-slate-700">+</button>
+                </div>
+
+                <button
+                  onclick="addToCart('${p.id}', Number(document.getElementById('pdp-qty-input').value || 1))"
+                  ${p.stock === 0 ? 'disabled' : ''}
+                  class="flex-1 min-w-[160px] bg-royal-600 hover:bg-royal-500 disabled:bg-slate-300 text-white py-3.5 px-6 rounded-xl font-bold text-sm shadow-lg transition flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <span>Add to Cart</span>
+                </button>
+
+                <button
+                  onclick="buyNowProduct('${p.id}')"
+                  ${p.stock === 0 ? 'disabled' : ''}
+                  class="flex-1 min-w-[160px] bg-amber-500 hover:bg-amber-600 disabled:bg-slate-300 text-navy-950 py-3.5 px-6 rounded-xl font-bold text-sm shadow-lg transition flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>Buy Now</span>
+                </button>
+              </div>
+
+              <!-- Technical Specifications Table -->
+              <div class="mt-2">
+                <h3 class="font-tech font-bold text-lg text-navy-900 uppercase mb-2">Technical Specifications & Dimensions</h3>
+                <div class="rounded-xl border border-silver-200 overflow-hidden">
+                  <table class="w-full">
+                    <tbody>${specsTable}</tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CUSTOMER REVIEWS SECTION -->
+          <div class="bg-white rounded-3xl border border-silver-200 p-6 md:p-8 mt-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              <div class="lg:col-span-7">
+                <h3 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-4">Customer Ratings & Reviews (${productReviews.length})</h3>
+                ${productReviews.length === 0 ? `
+                  <p class="text-sm text-slate-500">No reviews yet for this part. Share your installation or machinery feedback!</p>
+                ` : `
+                  <div class="space-y-4">
+                    ${productReviews.map(r => `
+                      <div class="p-4 rounded-xl bg-slate-50 border border-silver-200">
+                        <div class="flex items-center justify-between mb-1">
+                          <span class="font-bold text-sm text-navy-900">${r.author}</span>
+                          <span class="text-amber-500 text-xs">${'<i class="fa-solid fa-star"></i>'.repeat(r.rating)}</span>
+                        </div>
+                        <p class="text-sm text-slate-600">${r.comment}</p>
+                        <span class="text-[11px] text-slate-400">${r.date}</span>
+                      </div>
+                    `).join("")}
+                  </div>
+                `}
+              </div>
+
+              <div class="lg:col-span-5 bg-silver-100 p-5 rounded-2xl border border-silver-200">
+                <h4 class="font-bold text-navy-900 mb-3">Write a Review</h4>
+                <form onsubmit="submitProductReview(event, '${p.id}')" class="space-y-3">
+                  <input type="text" id="rev-author" required placeholder="Your Name / Workshop Name" class="w-full rounded-xl border border-silver-300 px-3.5 py-2 text-sm bg-white" />
+                  <select id="rev-rating" class="w-full rounded-xl border border-silver-300 px-3.5 py-2 text-sm bg-white">
+                    <option value="5">5 Stars - Genuine & Perfect Fit</option>
+                    <option value="4">4 Stars - Very Good Quality</option>
+                    <option value="3">3 Stars - Average</option>
+                  </select>
+                  <textarea id="rev-comment" required rows="3" placeholder="Share fitment details, vehicle model, or delivery speed..." class="w-full rounded-xl border border-silver-300 px-3.5 py-2 text-sm bg-white"></textarea>
+                  <button type="submit" class="w-full bg-navy-900 hover:bg-royal-600 text-white py-2.5 rounded-xl text-sm font-bold transition">
+                    Submit Review
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- RELATED PRODUCTS -->
+          ${relatedProducts.length > 0 ? `
+            <div class="mt-12">
+              <h3 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-5">Related ${p.category}</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                ${relatedProducts.map(renderProductCard).join("")}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- RECENTLY VIEWED -->
+          ${recentProducts.length > 1 ? `
+            <div class="mt-12">
+              <h3 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-5">Recently Viewed Parts</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                ${recentProducts.map(renderProductCard).join("")}
+              </div>
+            </div>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    function adjustPdpQty(delta, maxStock = 999) {
+      const input = document.getElementById("pdp-qty-input");
+      if (!input) return;
+      let val = Number(input.value) + delta;
+      if (val < 1) val = 1;
+      if (val > maxStock) val = maxStock;
+      input.value = val;
+    }
+
+    function buyNowProduct(productId) {
+      const qty = Number(document.getElementById("pdp-qty-input")?.value || 1);
+      addToCart(productId, qty);
+      navigate('checkout');
+    }
+
+    function submitProductReview(e, productId) {
+      e.preventDefault();
+      const author = document.getElementById("rev-author").value.trim();
+      const rating = Number(document.getElementById("rev-rating").value);
+      const comment = document.getElementById("rev-comment").value.trim();
+      state.reviews.unshift({
+        id: "REV-" + Date.now(),
+        productId,
+        author,
+        rating,
+        date: new Date().toISOString().split("T")[0],
+        comment
+      });
+      persistState();
+      showToast("Thank you! Your review has been published.");
+      renderCurrentView();
+    }
+
+    /* ---------------- 6D. FULL CHECKOUT & PAYMENT GATEWAY VIEW ---------------- */
+    let checkoutDeliveryFee = 450;
+
+    function renderCheckoutView() {
+      if (state.cart.length === 0) {
+        return `
+          <div class="max-w-xl mx-auto px-4 py-20 text-center">
+            <div class="bg-white rounded-3xl p-10 border border-silver-200 shadow-xs">
+              <i class="fa-solid fa-cart-shopping text-5xl text-silver-400 mb-4"></i>
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-2">Your Cart is Empty</h2>
+              <p class="text-sm text-slate-500 mb-6">Add spare parts or bearings to your cart before proceeding to checkout.</p>
+              <button onclick="navigate('shop')" class="bg-royal-600 text-white px-6 py-3 rounded-xl font-bold text-sm">Browse Parts Catalogue</button>
+            </div>
+          </div>`;
+      }
+
+      const u = state.currentUser || {};
+      const addr = u.address || {};
+      let subtotal = 0;
+
+      const summaryRows = state.cart.map(item => {
+        const p = state.products.find(prod => prod.id === item.id);
+        if (!p) return "";
+        const line = p.price * item.qty;
+        subtotal += line;
+        return `
+          <div class="flex justify-between items-center py-2.5 border-b border-silver-200 text-sm">
+            <div>
+              <div class="font-semibold text-navy-900">${p.name}</div>
+              <div class="text-xs text-slate-500">Part #: ${p.partNumber} &times; ${item.qty}</div>
+            </div>
+            <div class="font-bold text-slate-900">${formatLKR(line)}</div>
+          </div>`;
+      }).join("");
+
+      const grandTotal = subtotal + checkoutDeliveryFee;
+
+      return `
+        <div class="max-w-7xl mx-auto px-4 py-10">
+          <h1 class="font-tech font-bold text-3xl text-navy-900 uppercase mb-6">Secure Checkout — INTOR LANKA SPARE PARTS</h1>
+
+          <form onsubmit="processCheckoutOrder(event)" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Left Customer, Address, Delivery & Payment Form -->
+            <div class="lg:col-span-7 space-y-6">
+              <!-- 1. Customer & Sri Lankan Address -->
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <h2 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-royal-600 text-white text-xs flex items-center justify-center">1</span>
+                  Customer & Sri Lankan Delivery Details
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="sm:col-span-2">
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Full Name / Company Name *</label>
+                    <input type="text" id="chk-name" required value="${u.name || ''}" placeholder="e.g. Kasun Perera / Lanka Motors" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number (Sri Lanka) *</label>
+                    <input type="tel" id="chk-phone" required value="${u.phone || ''}" placeholder="077 123 4567" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Email Address *</label>
+                    <input type="email" id="chk-email" required value="${u.email || ''}" placeholder="you@example.lk" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Street Address *</label>
+                    <input type="text" id="chk-street" required value="${addr.street || ''}" placeholder="No. 45, High Level Road" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">City / Town *</label>
+                    <input type="text" id="chk-city" required value="${addr.city || ''}" placeholder="e.g. Nugegoda / Kandy / Kurunegala" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">District *</label>
+                    <select id="chk-district" required class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm bg-white">
+                      ${SRI_LANKA_DISTRICTS.map(d => `<option value="${d}" ${(addr.district || 'Colombo') === d ? 'selected' : ''}>${d}</option>`).join("")}
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Postal Code</label>
+                    <input type="text" id="chk-postal" value="${addr.postalCode || ''}" placeholder="e.g. 10250" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Delivery Method -->
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <h2 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-royal-600 text-white text-xs flex items-center justify-center">2</span>
+                  Delivery Method
+                </h2>
+                <div class="space-y-3">
+                  <label class="flex items-center justify-between p-3.5 rounded-xl border border-silver-300 cursor-pointer hover:border-royal-500">
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="deliveryMethod" value="Standard Islandwide Courier" data-fee="450" ${checkoutDeliveryFee === 450 ? 'checked' : ''} onchange="updateCheckoutDelivery(450)" />
+                      <div>
+                        <div class="font-bold text-sm text-navy-900">Standard Islandwide Courier (24–48 Hours)</div>
+                        <div class="text-xs text-slate-500">Delivered across all 25 Sri Lankan districts</div>
+                      </div>
+                    </div>
+                    <span class="font-bold text-sm text-navy-900">LKR 450.00</span>
+                  </label>
+
+                  <label class="flex items-center justify-between p-3.5 rounded-xl border border-silver-300 cursor-pointer hover:border-royal-500">
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="deliveryMethod" value="Express Colombo Delivery" data-fee="650" ${checkoutDeliveryFee === 650 ? 'checked' : ''} onchange="updateCheckoutDelivery(650)" />
+                      <div>
+                        <div class="font-bold text-sm text-navy-900">Same-Day Express Colombo & Suburbs</div>
+                        <div class="text-xs text-slate-500">Colombo 01–15, Dehiwala, Nugegoda, Battaramulla, Wattala</div>
+                      </div>
+                    </div>
+                    <span class="font-bold text-sm text-navy-900">LKR 650.00</span>
+                  </label>
+
+                  <label class="flex items-center justify-between p-3.5 rounded-xl border border-silver-300 cursor-pointer hover:border-royal-500">
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="deliveryMethod" value="Store Pickup at Panchikawatta" data-fee="0" ${checkoutDeliveryFee === 0 ? 'checked' : ''} onchange="updateCheckoutDelivery(0)" />
+                      <div>
+                        <div class="font-bold text-sm text-navy-900">In-Store Counter Pickup — 156 Panchikawatta Road</div>
+                        <div class="text-xs text-slate-500">Ready within 45 minutes during store hours</div>
+                      </div>
+                    </div>
+                    <span class="font-bold text-sm text-emerald-600">FREE</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 3. Mandatory Payment Method Selection -->
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <h2 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-royal-600 text-white text-xs flex items-center justify-center">3</span>
+                  Select Payment Method
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <label class="p-4 rounded-xl border-2 border-royal-600 bg-royal-50/40 cursor-pointer flex items-start gap-3">
+                    <input type="radio" name="paymentMethod" value="COD" checked onchange="toggleCardFields(false)" class="mt-1" />
+                    <div>
+                      <div class="font-bold text-sm text-navy-900 flex items-center gap-1.5">
+                        <i class="fa-solid fa-money-bill-wave text-emerald-600"></i> Cash on Delivery (COD)
+                      </div>
+                      <p class="text-xs text-slate-600 mt-1">Pay in cash upon receiving your spare parts at your doorstep.</p>
+                    </div>
+                  </label>
+
+                  <label class="p-4 rounded-xl border-2 border-silver-300 hover:border-royal-500 cursor-pointer flex items-start gap-3">
+                    <input type="radio" name="paymentMethod" value="CARD" onchange="toggleCardFields(true)" class="mt-1" />
+                    <div>
+                      <div class="font-bold text-sm text-navy-900 flex items-center gap-1.5">
+                        <i class="fa-regular fa-credit-card text-royal-600"></i> Card Payment (VISA / Mastercard)
+                      </div>
+                      <p class="text-xs text-slate-600 mt-1">Instant online payment via PayHere / Stripe Sri Lanka Gateway.</p>
+                    </div>
+                  </label>
+                </div>
+
+                <!-- Interactive Card Payment Form (Shown when Card Selected) -->
+                <div id="card-payment-box" class="hidden mt-5 p-5 rounded-2xl bg-navy-900 text-white space-y-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-400">
+                      <i class="fa-solid fa-lock mr-1"></i> 256-Bit SSL Encrypted Card Gateway
+                    </span>
+                    <div class="flex gap-2 text-lg">
+                      <i class="fa-brands fa-cc-visa"></i>
+                      <i class="fa-brands fa-cc-mastercard"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-xs text-silver-300 mb-1">Cardholder Name</label>
+                    <input type="text" id="card-holder" placeholder="AS PRINTED ON CARD" class="w-full bg-navy-800 border border-navy-700 rounded-xl px-3.5 py-2 text-sm text-white" />
+                  </div>
+                  <div>
+                    <label class="block text-xs text-silver-300 mb-1">Card Number</label>
+                    <input type="text" id="card-number" maxlength="19" placeholder="4242 •••• •••• 4242" class="w-full bg-navy-800 border border-navy-700 rounded-xl px-3.5 py-2 text-sm text-white font-mono" />
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-xs text-silver-300 mb-1">Expiry (MM/YY)</label>
+                      <input type="text" id="card-expiry" maxlength="5" placeholder="08/29" class="w-full bg-navy-800 border border-navy-700 rounded-xl px-3.5 py-2 text-sm text-white font-mono" />
+                    </div>
+                    <div>
+                      <label class="block text-xs text-silver-300 mb-1">CVV / CVC</label>
+                      <input type="password" id="card-cvv" maxlength="4" placeholder="123" class="w-full bg-navy-800 border border-navy-700 rounded-xl px-3.5 py-2 text-sm text-white font-mono" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Order Summary -->
+            <div class="lg:col-span-5">
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-lg sticky top-28">
+                <h2 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4 pb-3 border-b border-silver-200">Order Summary</h2>
+                <div class="max-h-72 overflow-y-auto mb-4">
+                  ${summaryRows}
+                </div>
+                <div class="space-y-2.5 text-sm pt-2">
+                  <div class="flex justify-between text-slate-600">
+                    <span>Parts Subtotal</span>
+                    <span class="font-semibold text-slate-900">${formatLKR(subtotal)}</span>
+                  </div>
+                  <div class="flex justify-between text-slate-600">
+                    <span>Delivery Fee</span>
+                    <span class="font-semibold text-slate-900">${checkoutDeliveryFee === 0 ? 'FREE (Pickup)' : formatLKR(checkoutDeliveryFee)}</span>
+                  </div>
+                  <div class="flex justify-between text-lg font-extrabold text-navy-900 pt-3 border-t border-silver-200">
+                    <span>Grand Total (LKR)</span>
+                    <span class="text-royal-600">${formatLKR(grandTotal)}</span>
+                  </div>
+                </div>
+
+                <button type="submit" class="w-full mt-6 bg-royal-600 hover:bg-royal-500 text-white py-4 rounded-xl font-bold text-base shadow-xl transition flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>CONFIRM & PLACE ORDER</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      `;
+    }
+
+    function updateCheckoutDelivery(fee) {
+      checkoutDeliveryFee = fee;
+      renderCurrentView();
+    }
+
+    function toggleCardFields(show) {
+      const box = document.getElementById("card-payment-box");
+      if (box) {
+        if (show) box.classList.remove("hidden");
+        else box.classList.add("hidden");
+      }
+    }
+
+    function processCheckoutOrder(e) {
+      e.preventDefault();
+      const paymentType = document.querySelector('input[name="paymentMethod"]:checked').value;
+      const deliveryRadio = document.querySelector('input[name="deliveryMethod"]:checked');
+      const deliveryMethod = deliveryRadio.value;
+      const deliveryFee = Number(deliveryRadio.dataset.fee);
+
+      let paymentLabel = "Cash on Delivery (COD)";
+      let paymentStatus = "Pending Collection";
+
+      if (paymentType === "CARD") {
+        const cardNum = (document.getElementById("card-number")?.value || "").replace(/\s+/g, "");
+        const expiry = document.getElementById("card-expiry")?.value || "";
+        const cvv = document.getElementById("card-cvv")?.value || "";
+        if (cardNum.length < 12 || !expiry || cvv.length < 3) {
+          showToast("Please enter valid VISA / Mastercard card number, expiry, and CVV.", "error");
+          return;
+        }
+        paymentLabel = `Card Payment (•••• ${cardNum.slice(-4)})`;
+        paymentStatus = "Paid Online";
+      }
+
+      let subtotal = 0;
+      const orderItems = [];
+
+      // Deduct real inventory stock
+      for (const cartItem of state.cart) {
+        const prod = state.products.find(p => p.id === cartItem.id);
+        if (prod) {
+          const qtyToBuy = Math.min(cartItem.qty, prod.stock);
+          prod.stock = Math.max(0, prod.stock - qtyToBuy);
+          subtotal += prod.price * qtyToBuy;
+          orderItems.push({
+            id: prod.id,
+            partNumber: prod.partNumber,
+            name: prod.name,
+            price: prod.price,
+            qty: qtyToBuy
+          });
+        }
+      }
+
+      const orderRef = "INT-2026-" + Math.floor(1000 + Math.random() * 9000);
+      const newOrder = {
+        orderRef,
+        date: new Date().toLocaleString("en-GB", { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }),
+        customer: {
+          name: document.getElementById("chk-name").value.trim(),
+          phone: document.getElementById("chk-phone").value.trim(),
+          email: document.getElementById("chk-email").value.trim(),
+          street: document.getElementById("chk-street").value.trim(),
+          city: document.getElementById("chk-city").value.trim(),
+          district: document.getElementById("chk-district").value,
+          postalCode: document.getElementById("chk-postal").value.trim()
+        },
+        deliveryMethod,
+        deliveryFee,
+        paymentMethod: paymentLabel,
+        paymentStatus,
+        status: paymentType === "CARD" ? "Confirmed" : "Pending",
+        items: orderItems,
+        subtotal,
+        total: subtotal + deliveryFee
+      };
+
+      state.orders.unshift(newOrder);
+      state.cart = [];
+      persistState();
+      showToast(`Order ${orderRef} confirmed successfully!`);
+      showOrderInvoiceModal(orderRef);
+      navigate('track');
+    }
+
+    function showOrderInvoiceModal(orderRef) {
+      const order = state.orders.find(o => o.orderRef === orderRef);
+      if (!order) return;
+
+      const itemsHTML = order.items.map((it, idx) => `
+        <tr class="border-b border-slate-200 text-xs sm:text-sm">
+          <td class="py-2.5 px-3">${idx + 1}</td>
+          <td class="py-2.5 px-3 font-tech font-bold text-royal-600">${it.partNumber}</td>
+          <td class="py-2.5 px-3 font-medium text-slate-800">${it.name}</td>
+          <td class="py-2.5 px-3 text-center">${it.qty}</td>
+          <td class="py-2.5 px-3 text-right">${formatLKR(it.price)}</td>
+          <td class="py-2.5 px-3 text-right font-bold">${formatLKR(it.price * it.qty)}</td>
+        </tr>`).join("");
+
+      openModal(`
+        <div id="printable-invoice" class="p-6 sm:p-8 bg-white">
+          <div class="flex flex-wrap justify-between items-start gap-4 border-b-2 border-navy-900 pb-5 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-navy-900 flex items-center justify-center overflow-hidden">
+                ${renderBrandLogoHTML()}
+              </div>
+              <div>
+                <h2 class="font-tech font-bold text-2xl text-navy-900">INTOR LANKA SPARE PARTS</h2>
+                <p class="text-xs text-slate-600">156 Panchikawatta Road, Colombo 01000, Sri Lanka</p>
+                <p class="text-xs text-slate-600">Tel: 0112 470 490 | WhatsApp: +94 11 247 0490</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="inline-block px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-bold text-xs uppercase mb-1">
+                Order Confirmed
+              </div>
+              <div class="font-tech font-bold text-xl text-navy-900">REF: ${order.orderRef}</div>
+              <div class="text-xs text-slate-500">Date: ${order.date}</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 text-xs sm:text-sm">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="font-bold text-navy-900 uppercase text-xs mb-1">Billed & Shipped To:</div>
+              <div class="font-bold">${order.customer.name}</div>
+              <div>${order.customer.street}, ${order.customer.city}</div>
+              <div>${order.customer.district} District ${order.customer.postalCode || ''}</div>
+              <div class="mt-1">Phone: <strong>${order.customer.phone}</strong></div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="font-bold text-navy-900 uppercase text-xs mb-1">Fulfillment & Payment:</div>
+              <div>Delivery: <strong>${order.deliveryMethod}</strong></div>
+              <div>Payment: <strong>${order.paymentMethod}</strong></div>
+              <div>Payment Status: <strong class="text-royal-600">${order.paymentStatus}</strong></div>
+              <div>Order Status: <strong class="text-amber-600">${order.status}</strong></div>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-slate-200 mb-6">
+            <table class="w-full text-left">
+              <thead class="bg-navy-900 text-white text-xs uppercase">
+                <tr>
+                  <th class="py-2.5 px-3">#</th>
+                  <th class="py-2.5 px-3">Part No</th>
+                  <th class="py-2.5 px-3">Description</th>
+                  <th class="py-2.5 px-3 text-center">Qty</th>
+                  <th class="py-2.5 px-3 text-right">Unit Price</th>
+                  <th class="py-2.5 px-3 text-right">Total</th>
+                </tr>
+              </thead>
+              <tbody>${itemsHTML}</tbody>
+            </table>
+          </div>
+
+          <div class="flex justify-end mb-6">
+            <div class="w-full sm:w-72 space-y-2 text-sm">
+              <div class="flex justify-between text-slate-600">
+                <span>Subtotal:</span>
+                <span>${formatLKR(order.subtotal)}</span>
+              </div>
+              <div class="flex justify-between text-slate-600">
+                <span>Delivery Fee:</span>
+                <span>${formatLKR(order.deliveryFee)}</span>
+              </div>
+              <div class="flex justify-between font-extrabold text-base text-navy-900 border-t border-slate-300 pt-2">
+                <span>Grand Total:</span>
+                <span>${formatLKR(order.total)}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="no-print flex flex-wrap justify-between items-center gap-3 pt-4 border-t border-slate-200">
+            <button onclick="window.print()" class="bg-navy-900 hover:bg-royal-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2">
+              <i class="fa-solid fa-print"></i> Print / Save PDF Invoice
+            </button>
+            <button onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold hover:bg-slate-50">
+              Close Summary
+            </button>
+          </div>
+        </div>
+      `);
+    }
+
+    /* ---------------- 6E. TRACK MY ORDER VIEW ---------------- */
+    let trackedOrderRef = "INT-2026-4819";
+
+    function renderTrackOrderView() {
+      const order = state.orders.find(o => o.orderRef.toLowerCase() === trackedOrderRef.toLowerCase());
+      const steps = ["Pending", "Confirmed", "Dispatched", "Delivered"];
+      const currentIdx = order ? steps.indexOf(order.status) : -1;
+
+      return `
+        <div class="max-w-4xl mx-auto px-4 py-12">
+          <div class="text-center mb-8">
+            <span class="text-xs font-bold uppercase tracking-widest text-royal-600">Live Logistics & Counter Status</span>
+            <h1 class="font-tech font-bold text-3xl sm:text-4xl text-navy-900 uppercase mt-1">Track Your INTOR LANKA Order</h1>
+            <p class="text-sm text-slate-500 mt-1">Enter your Order Reference Number (e.g., <code class="bg-slate-200 px-1.5 py-0.5 rounded">INT-2026-4819</code> or your newly placed order ID).</p>
+          </div>
+
+          <form onsubmit="handleTrackOrderSearch(event)" class="bg-white p-4 rounded-2xl border border-silver-200 shadow-md flex flex-col sm:flex-row gap-3 mb-8">
+            <input
+              type="text"
+              id="track-ref-input"
+              value="${trackedOrderRef}"
+              required
+              placeholder="Order Reference (e.g. INT-2026-4819)"
+              class="flex-1 border border-silver-300 rounded-xl px-4 py-3 text-sm font-mono uppercase"
+            />
+            <button type="submit" class="bg-royal-600 hover:bg-royal-500 text-white px-7 py-3 rounded-xl font-bold text-sm transition">
+              Track Status
+            </button>
+          </form>
+
+          ${order ? `
+            <div class="bg-white rounded-3xl border border-silver-200 p-6 sm:p-8 shadow-xs">
+              <div class="flex flex-wrap justify-between items-center gap-4 pb-6 border-b border-silver-200">
+                <div>
+                  <div class="text-xs text-slate-500">Order Reference</div>
+                  <div class="font-tech font-bold text-2xl text-navy-900">${order.orderRef}</div>
+                  <div class="text-xs text-slate-500">Placed on ${order.date} • ${order.deliveryMethod}</div>
+                </div>
+                <button onclick="showOrderInvoiceModal('${order.orderRef}')" class="px-4 py-2 rounded-xl bg-silver-100 hover:bg-silver-200 text-navy-900 text-xs font-bold">
+                  <i class="fa-solid fa-file-invoice mr-1"></i> View Invoice
+                </button>
+              </div>
+
+              <!-- Visual Progress Stepper -->
+              <div class="grid grid-cols-4 gap-2 my-8">
+                ${steps.map((step, idx) => {
+                  const active = idx <= currentIdx;
+                  return `
+                    <div class="text-center">
+                      <div class="w-10 h-10 mx-auto rounded-full flex items-center justify-center font-bold text-sm mb-2 ${active ? 'bg-royal-600 text-white shadow-md' : 'bg-silver-200 text-slate-500'}">
+                        ${active ? '<i class="fa-solid fa-check"></i>' : idx + 1}
+                      </div>
+                      <div class="text-xs font-bold ${active ? 'text-navy-900' : 'text-slate-400'}">${step}</div>
+                    </div>`;
+                }).join("")}
+              </div>
+
+              <div class="bg-slate-50 rounded-2xl p-4 border border-silver-200 text-sm space-y-2">
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Recipient:</span>
+                  <span class="font-semibold">${order.customer.name} (${order.customer.city}, ${order.customer.district})</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Payment Method:</span>
+                  <span class="font-semibold">${order.paymentMethod} (${order.paymentStatus})</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Order Total:</span>
+                  <span class="font-extrabold text-navy-900">${formatLKR(order.total)}</span>
+                </div>
+              </div>
+            </div>
+          ` : `
+            <div class="bg-white rounded-2xl p-8 text-center border border-silver-200 text-sm text-slate-600">
+              No order found matching <strong>${trackedOrderRef}</strong>. Please verify the reference code on your confirmation summary.
+            </div>
+          `}
+        </div>
+      `;
+    }
+
+    function handleTrackOrderSearch(e) {
+      e.preventDefault();
+      trackedOrderRef = document.getElementById("track-ref-input").value.trim();
+      renderCurrentView();
+    }
+
+    /* ---------------- 6F. CUSTOMER ACCOUNT VIEW ---------------- */
+    function renderAccountView() {
+      if (!state.currentUser) {
+        return `
+          <div class="max-w-4xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Customer Login -->
+            <div class="bg-white p-7 rounded-3xl border border-silver-200 shadow-xs">
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-1">Customer Login</h2>
+              <p class="text-xs text-slate-500 mb-5">Access saved addresses, order history & invoices.</p>
+              <form onsubmit="handleCustomerLogin(event)" class="space-y-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+                  <input type="email" id="cust-login-email" required value="customer@intorlanka.lk" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Password</label>
+                  <input type="password" id="cust-login-pass" required value="password123" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                </div>
+                <button type="submit" class="w-full bg-royal-600 hover:bg-royal-500 text-white py-3 rounded-xl font-bold text-sm transition">
+                  Sign In to Account
+                </button>
+              </form>
+            </div>
+
+            <!-- Customer Registration -->
+            <div class="bg-white p-7 rounded-3xl border border-silver-200 shadow-xs">
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-1">Create New Account</h2>
+              <p class="text-xs text-slate-500 mb-5">Register for faster checkout & garage fleet tracking.</p>
+              <form onsubmit="handleCustomerRegister(event)" class="space-y-3">
+                <input type="text" id="reg-name" required placeholder="Full Name / Workshop Name" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                <input type="email" id="reg-email" required placeholder="Email Address" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                <input type="tel" id="reg-phone" required placeholder="Phone (07X XXX XXXX)" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                <input type="password" id="reg-pass" required placeholder="Create Password" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                <button type="submit" class="w-full bg-navy-900 hover:bg-royal-600 text-white py-3 rounded-xl font-bold text-sm transition">
+                  Register Customer Account
+                </button>
+              </form>
+            </div>
+          </div>
+        `;
+      }
+
+      const u = state.currentUser;
+      const userOrders = state.orders.filter(o => o.customer.email.toLowerCase() === u.email.toLowerCase());
+
+      return `
+        <div class="max-w-6xl mx-auto px-4 py-10">
+          <div class="bg-navy-900 text-white rounded-3xl p-6 sm:p-8 flex flex-wrap justify-between items-center gap-4 mb-8">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-amber-400 font-bold">Verified Customer Portal</span>
+              <h1 class="font-tech font-bold text-3xl uppercase">${u.name}</h1>
+              <p class="text-sm text-silver-300">${u.email} &bull; ${u.phone}</p>
+            </div>
+            <button onclick="state.currentUser = null; persistState(); renderCurrentView(); showToast('Logged out successfully.');" class="bg-white/10 hover:bg-red-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition">
+              Logout
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-4 bg-white p-6 rounded-2xl border border-silver-200 h-fit">
+              <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Saved Delivery Address</h3>
+              <form onsubmit="saveCustomerAddress(event)" class="space-y-3 text-sm">
+                <input type="text" id="prof-street" value="${u.address?.street || ''}" placeholder="Street Address" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+                <input type="text" id="prof-city" value="${u.address?.city || ''}" placeholder="City" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+                <select id="prof-district" class="w-full border border-silver-300 rounded-xl px-3 py-2 bg-white">
+                  ${SRI_LANKA_DISTRICTS.map(d => `<option value="${d}" ${(u.address?.district || 'Colombo') === d ? 'selected' : ''}>${d}</option>`).join("")}
+                </select>
+                <input type="text" id="prof-postal" value="${u.address?.postalCode || ''}" placeholder="Postal Code" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+                <button type="submit" class="w-full bg-royal-600 text-white py-2.5 rounded-xl font-bold text-xs">Save Address</button>
+              </form>
+            </div>
+
+            <div class="lg:col-span-8 bg-white p-6 rounded-2xl border border-silver-200">
+              <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Your Order History (${userOrders.length})</h3>
+              ${userOrders.length === 0 ? `
+                <p class="text-sm text-slate-500">No orders placed under this account yet.</p>
+              ` : `
+                <div class="space-y-4">
+                  ${userOrders.map(o => `
+                    <div class="p-4 rounded-xl border border-silver-200 flex flex-wrap items-center justify-between gap-4">
+                      <div>
+                        <div class="font-tech font-bold text-lg text-navy-900">${o.orderRef}</div>
+                        <div class="text-xs text-slate-500">${o.date} &bull; ${o.items.length} item(s) &bull; ${o.paymentMethod}</div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-royal-50 text-royal-700">${o.status}</span>
+                        <span class="font-extrabold text-sm text-navy-900">${formatLKR(o.total)}</span>
+                        <button onclick="showOrderInvoiceModal('${o.orderRef}')" class="px-3 py-1.5 rounded-lg bg-navy-900 text-white text-xs font-semibold">Invoice</button>
+                      </div>
+                    </div>
+                  `).join("")}
+                </div>
+              `}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function handleCustomerLogin(e) {
+      e.preventDefault();
+      const email = document.getElementById("cust-login-email").value.trim().toLowerCase();
+      const pass = document.getElementById("cust-login-pass").value;
+      const user = state.users.find(u => u.email.toLowerCase() === email && u.password === pass);
+      if (!user) {
+        showToast("Invalid email or password.", "error");
+        return;
+      }
+      state.currentUser = user;
+      persistState();
+      showToast(`Welcome back, ${user.name}!`);
+      renderCurrentView();
+    }
+
+    function handleCustomerRegister(e) {
+      e.preventDefault();
+      const name = document.getElementById("reg-name").value.trim();
+      const email = document.getElementById("reg-email").value.trim();
+      const phone = document.getElementById("reg-phone").value.trim();
+      const password = document.getElementById("reg-pass").value;
+      if (state.users.some(u => u.email.toLowerCase() === email.toLowerCase())) {
+        showToast("An account with this email already exists.", "error");
+        return;
+      }
+      const newUser = { id: "USR-" + Date.now(), name, email, phone, password, address: {} };
+      state.users.push(newUser);
+      state.currentUser = newUser;
+      persistState();
+      showToast("Account created! Welcome to INTOR LANKA.");
+      renderCurrentView();
+    }
+
+    function saveCustomerAddress(e) {
+      e.preventDefault();
+      if (!state.currentUser) return;
+      state.currentUser.address = {
+        street: document.getElementById("prof-street").value.trim(),
+        city: document.getElementById("prof-city").value.trim(),
+        district: document.getElementById("prof-district").value,
+        postalCode: document.getElementById("prof-postal").value.trim()
+      };
+      const idx = state.users.findIndex(u => u.id === state.currentUser.id);
+      if (idx !== -1) state.users[idx] = state.currentUser;
+      persistState();
+      showToast("Delivery address updated!");
+    }
+
+    /* ---------------- 6G. ABOUT US VIEW ---------------- */
+    function renderAboutView() {
+      return `
+        <div class="metallic-gradient text-white py-16 px-4">
+          <div class="max-w-5xl mx-auto text-center">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Engineering Trust Across Sri Lanka</span>
+            <h1 class="font-tech font-bold text-4xl sm:text-5xl uppercase mt-2 mb-4">About INTOR LANKA SPARE PARTS</h1>
+            <p class="text-silver-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+              Headquartered at the heart of Sri Lanka's automotive trade hub at 156 Panchikawatta Road, Colombo 01000, INTOR LANKA SPARE PARTS is a specialized importer and distributor of automotive spare parts, precision vehicle bearings, and heavy industrial machinery bearings.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 py-14 space-y-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-silver-200 shadow-xs">
+              <div class="w-12 h-12 rounded-xl bg-royal-600 text-white flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-2">Our Vision</h2>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                To be Sri Lanka's most dependable technical partner for automotive mobility and industrial manufacturing—ensuring zero downtime through authentic, precision-engineered components.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-silver-200 shadow-xs">
+              <div class="w-12 h-12 rounded-xl bg-amber-500 text-navy-950 flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-2">Our Mission</h2>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                To supply 100% genuine Japanese and European spare parts and bearings at fair LKR pricing, backed by expert cross-reference support and rapid islandwide delivery.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-silver-200">
+              <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-2">1. Strict Quality Assurance</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Every bearing and spare part is sourced from verified global manufacturers (SKF, NSK, NTN, KOYO, DENSO, BREMBO) to eliminate counterfeit risks.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-silver-200">
+              <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-2">2. Customer & Mechanic Support</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Our Panchikawatta technical specialists help match inner/outer diameters, OEM part numbers, and industrial housing specifications accurately.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-silver-200">
+              <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-2">3. Islandwide Logistics Network</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">From Jaffna to Matara and tea estates in Nuwara Eliya, our courier partners deliver critical parts safely and on schedule.</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    /* ---------------- 6H. CONTACT US & GOOGLE MAP VIEW ---------------- */
+    function renderContactView() {
+      return `
+        <div class="bg-navy-900 text-white py-12 px-4">
+          <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Direct Technical Desk & Storefront</span>
+            <h1 class="font-tech font-bold text-3xl sm:text-4xl uppercase mt-1">Contact INTOR LANKA SPARE PARTS</h1>
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- Left Contact Details & Embedded Google Map -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="bg-white p-6 rounded-3xl border border-silver-200 shadow-xs space-y-4">
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase">Colombo Flagship Showroom & Warehouse</h2>
+              <div class="space-y-3 text-sm">
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-lg bg-royal-50 text-royal-600 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-building"></i>
+                  </div>
+                  <div>
+                    <div class="font-bold text-navy-900">INTOR LANKA SPARE PARTS</div>
+                    <div class="text-slate-600">156 Panchikawatta Road, Colombo 01000, Sri Lanka</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-lg bg-royal-50 text-royal-600 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-500">Telephone Hotline</div>
+                    <a href="tel:+94112470490" class="font-bold text-base text-royal-600 hover:underline">0112 470 490</a>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-500">Instant WhatsApp Parts Desk</div>
+                    <a href="https://wa.me/94112470490" target="_blank" rel="noopener noreferrer" class="font-bold text-emerald-600 hover:underline">
+                      Chat on WhatsApp (+94 11 247 0490) &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Embedded Google Map pinned to 156 Panchikawatta Road, Colombo 01000 -->
+            <div class="bg-white p-3 rounded-3xl border border-silver-200 shadow-xs overflow-hidden">
+              <iframe
+                title="INTOR LANKA SPARE PARTS - 156 Panchikawatta Road, Colombo 01000"
+                src="https://www.google.com/maps?q=156+Panchikawatta+Road,+Colombo+01000,+Sri+Lanka&output=embed"
+                width="100%"
+                height="300"
+                style="border:0; border-radius: 1rem;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Right Functional Inquiry & Bulk Quotation Form -->
+          <div class="lg:col-span-6">
+            <div class="bg-white p-6 sm:p-8 rounded-3xl border border-silver-200 shadow-xs">
+              <h2 class="font-tech font-bold text-2xl text-navy-900 uppercase mb-1">Send Part Inquiry or Bulk Quotation Request</h2>
+              <p class="text-xs text-slate-500 mb-6">Need bearing cross-referencing or factory bulk pricing? Submit below and our team will respond promptly.</p>
+              <form onsubmit="submitCustomerInquiry(event)" class="space-y-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Your Name / Company Name *</label>
+                  <input type="text" id="inq-name" required placeholder="e.g. Samantha Silva / Ceylon Mills" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp Number *</label>
+                    <input type="tel" id="inq-phone" required placeholder="077 123 4567" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+                    <input type="email" id="inq-email" placeholder="you@company.lk" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Inquiry Category</label>
+                  <select id="inq-type" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm bg-white">
+                    <option value="Automotive Spare Part Availability">Automotive Spare Part Availability</option>
+                    <option value="Bearing Dimension / Cross-Reference">Bearing Dimension / Cross-Reference</option>
+                    <option value="Bulk / Industrial Machinery Quote">Bulk / Industrial Machinery Quote</option>
+                    <option value="Order Delivery Support">Order Delivery Support</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Part Numbers, Dimensions, or Vehicle Model *</label>
+                  <textarea id="inq-message" required rows="4" placeholder="Enter part codes (e.g., 6205-2RS, UCP208), vehicle chassis/model, or required quantities..." class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-royal-600 hover:bg-royal-500 text-white py-3.5 rounded-xl font-bold text-sm shadow-lg transition">
+                  <i class="fa-solid fa-paper-plane mr-1.5"></i> Submit Inquiry to INTOR LANKA
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function submitCustomerInquiry(e) {
+      e.preventDefault();
+      state.inquiries.unshift({
+        id: "INQ-" + Math.floor(100 + Math.random() * 900),
+        date: new Date().toLocaleString("en-GB", { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }),
+        name: document.getElementById("inq-name").value.trim(),
+        phone: document.getElementById("inq-phone").value.trim(),
+        email: document.getElementById("inq-email").value.trim(),
+        type: document.getElementById("inq-type").value,
+        message: document.getElementById("inq-message").value.trim()
+      });
+      persistState();
+      e.target.reset();
+      showToast("Inquiry received! Our Panchikawatta sales team will contact you shortly.");
+    }
+
+    /* ---------------- 6I. SECURE ADMIN DASHBOARD & MEDIA MANAGER ---------------- */
+    function renderAdminView() {
+      if (!state.isAdminAuthenticated) {
+        return `
+          <div class="max-w-md mx-auto px-4 py-16">
+            <div class="bg-white rounded-3xl p-8 border border-silver-200 shadow-xl">
+              <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-400 flex items-center justify-center text-2xl mx-auto mb-4">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h1 class="font-tech font-bold text-2xl text-navy-900 text-center uppercase">INTOR LANKA Admin Control</h1>
+              <p class="text-xs text-slate-500 text-center mt-1 mb-6">Sign in to manage logo, products, LKR pricing, orders & inventory.</p>
+              <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Admin Email</label>
+                  <input type="email" id="admin-email-input" required value="admin@intorlanka.lk" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Admin Password</label>
+                  <input type="password" id="admin-pass-input" required value="admin2026" class="w-full border border-silver-300 rounded-xl px-3.5 py-2.5 text-sm" />
+                </div>
+                <button type="submit" class="w-full bg-navy-900 hover:bg-royal-600 text-white py-3 rounded-xl font-bold text-sm transition">
+                  Access Admin Dashboard
+                </button>
+              </form>
+              <div class="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-200 text-[11px] text-amber-900 text-center">
+                Demo Credentials Pre-Filled: <strong>admin@intorlanka.lk</strong> / <strong>admin2026</strong>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      const totalRevenue = state.orders.reduce((sum, o) => sum + o.total, 0);
+      const pendingOrdersCount = state.orders.filter(o => o.status === "Pending" || o.status === "Confirmed").length;
+      const lowStockProducts = state.products.filter(p => p.stock <= 10);
+
+      return `
+        <div class="bg-navy-950 text-white py-6 px-4 border-b border-navy-800">
+          <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400">Administrator Console</span>
+              <h1 class="font-tech font-bold text-2xl sm:text-3xl uppercase">INTOR LANKA — Management & Media Hub</h1>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <button onclick="navigate('home')" class="px-4 py-2 rounded-xl bg-navy-800 hover:bg-navy-700 text-xs font-semibold">View Storefront</button>
+              <button onclick="state.isAdminAuthenticated = false; persistState(); renderCurrentView();" class="px-4 py-2 rounded-xl bg-red-600/20 hover:bg-red-600 text-red-300 hover:text-white text-xs font-semibold transition">Logout Admin</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-8">
+          <!-- Admin Navigation Tabs -->
+          <div class="flex flex-wrap gap-2 mb-8 border-b border-silver-200 pb-4">
+            <button onclick="state.adminTab = 'analytics'; renderCurrentView();" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${state.adminTab === 'analytics' ? 'bg-royal-600 text-white' : 'bg-white border border-silver-200 text-slate-700 hover:bg-slate-50'}">
+              <i class="fa-solid fa-chart-line mr-1.5"></i> Analytics Overview
+            </button>
+            <button onclick="state.adminTab = 'branding'; renderCurrentView();" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${state.adminTab === 'branding' ? 'bg-royal-600 text-white' : 'bg-white border border-silver-200 text-slate-700 hover:bg-slate-50'}">
+              <i class="fa-solid fa-image mr-1.5"></i> Brand Logo & Media Manager
+            </button>
+            <button onclick="state.adminTab = 'products'; renderCurrentView();" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${state.adminTab === 'products' ? 'bg-royal-600 text-white' : 'bg-white border border-silver-200 text-slate-700 hover:bg-slate-50'}">
+              <i class="fa-solid fa-boxes-stacked mr-1.5"></i> Products & Stock (${state.products.length})
+            </button>
+            <button onclick="state.adminTab = 'orders'; renderCurrentView();" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${state.adminTab === 'orders' ? 'bg-royal-600 text-white' : 'bg-white border border-silver-200 text-slate-700 hover:bg-slate-50'}">
+              <i class="fa-solid fa-truck-ramp-box mr-1.5"></i> Orders (${state.orders.length})
+            </button>
+            <button onclick="state.adminTab = 'customers'; renderCurrentView();" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${state.adminTab === 'customers' ? 'bg-royal-600 text-white' : 'bg-white border border-silver-200 text-slate-700 hover:bg-slate-50'}">
+              <i class="fa-solid fa-users mr-1.5"></i> Customers & Inquiries (${state.inquiries.length})
+            </button>
+            <button onclick="state.adminTab = 'blueprint'; renderCurrentView();" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${state.adminTab === 'blueprint' ? 'bg-amber-500 text-navy-950' : 'bg-white border border-silver-200 text-slate-700 hover:bg-slate-50'}">
+              <i class="fa-solid fa-database mr-1.5"></i> Node.js & SQL Schema
+            </button>
+          </div>
+
+          <!-- TAB 1: ANALYTICS OVERVIEW -->
+          ${state.adminTab === 'analytics' ? `
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <div class="text-xs font-bold text-slate-500 uppercase">Total Sales Revenue</div>
+                <div class="text-2xl font-extrabold text-navy-900 mt-1">${formatLKR(totalRevenue)}</div>
+                <div class="text-xs text-emerald-600 font-semibold mt-1"><i class="fa-solid fa-arrow-trend-up"></i> Live Cumulative LKR</div>
+              </div>
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <div class="text-xs font-bold text-slate-500 uppercase">Active / Pending Orders</div>
+                <div class="text-2xl font-extrabold text-royal-600 mt-1">${pendingOrdersCount} Orders</div>
+                <div class="text-xs text-slate-500 mt-1">Out of ${state.orders.length} total orders</div>
+              </div>
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <div class="text-xs font-bold text-slate-500 uppercase">Active Catalogue SKUs</div>
+                <div class="text-2xl font-extrabold text-navy-900 mt-1">${state.products.length} Parts</div>
+                <div class="text-xs text-slate-500 mt-1">Across 3 Main Divisions</div>
+              </div>
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs">
+                <div class="text-xs font-bold text-slate-500 uppercase">Low-Stock Alerts (&le;10)</div>
+                <div class="text-2xl font-extrabold text-amber-600 mt-1">${lowStockProducts.length} Items</div>
+                <div class="text-xs text-slate-500 mt-1">Requires restock order</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-2xl border border-silver-200">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Low-Stock Inventory Watchlist</h3>
+                <div class="space-y-3">
+                  ${lowStockProducts.map(p => `
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-amber-50/70 border border-amber-200 text-sm">
+                      <div>
+                        <span class="font-tech font-bold text-royal-600">${p.partNumber}</span> — <span class="font-semibold">${p.name}</span>
+                      </div>
+                      <span class="px-2.5 py-1 rounded-full bg-amber-500 text-navy-950 font-bold text-xs">${p.stock} left</span>
+                    </div>
+                  `).join("") || '<p class="text-sm text-slate-500">All SKUs are well stocked.</p>'}
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-2xl border border-silver-200">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Recent Customer Orders</h3>
+                <div class="space-y-3">
+                  ${state.orders.slice(0, 4).map(o => `
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-silver-200 text-sm">
+                      <div>
+                        <div class="font-bold text-navy-900">${o.orderRef} — ${o.customer.name}</div>
+                        <div class="text-xs text-slate-500">${o.paymentMethod}</div>
+                      </div>
+                      <div class="text-right">
+                        <div class="font-bold">${formatLKR(o.total)}</div>
+                        <span class="text-[11px] font-bold text-royal-600">${o.status}</span>
+                      </div>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- TAB 2: BRAND LOGO & MEDIA MANAGER -->
+          ${state.adminTab === 'branding' ? `
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Logo Uploader -->
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs space-y-4">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase">Official INTOR LANKA Logo Uploader</h3>
+                <p class="text-xs text-slate-600">Upload your official PNG, JPG, or SVG logo. It updates immediately across the header, footer, and printable tax invoices.</p>
+                <div class="w-32 h-32 rounded-2xl bg-navy-900 border-2 border-dashed border-silver-400 flex items-center justify-center overflow-hidden mx-auto">
+                  ${renderBrandLogoHTML()}
+                </div>
+                <input type="file" accept="image/*" onchange="handleBrandImageUpload(event, 'logoDataUrl')" class="w-full text-sm file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-royal-600 file:text-white hover:file:bg-royal-500 cursor-pointer" />
+                ${state.branding.logoDataUrl ? `
+                  <button onclick="state.branding.logoDataUrl = null; persistState(); renderCurrentView(); showToast('Reverted to default vector emblem.');" class="text-xs text-red-600 hover:underline font-semibold">
+                    Reset to Default Emblem
+                  </button>
+                ` : ''}
+              </div>
+
+              <!-- Hero Banner Uploader -->
+              <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs space-y-4">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase">Homepage Hero Background Banner</h3>
+                <p class="text-xs text-slate-600">Upload a custom high-resolution warehouse, bearing, or automotive engineering photo for the main homepage banner.</p>
+                <div class="h-32 rounded-2xl bg-navy-900 border-2 border-dashed border-silver-400 flex items-center justify-center overflow-hidden">
+                  ${state.branding.heroBannerDataUrl
+                    ? `<img src="${state.branding.heroBannerDataUrl}" class="w-full h-full object-cover" />`
+                    : `<span class="text-xs text-silver-400">Using Default Blue & Silver Technical Gradient</span>`}
+                </div>
+                <input type="file" accept="image/*" onchange="handleBrandImageUpload(event, 'heroBannerDataUrl')" class="w-full text-sm file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-royal-600 file:text-white hover:file:bg-royal-500 cursor-pointer" />
+                ${state.branding.heroBannerDataUrl ? `
+                  <button onclick="state.branding.heroBannerDataUrl = null; persistState(); renderCurrentView();" class="text-xs text-red-600 hover:underline font-semibold">
+                    Remove Custom Hero Image
+                  </button>
+                ` : ''}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- TAB 3: PRODUCT & INVENTORY MANAGEMENT -->
+          ${state.adminTab === 'products' ? `
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              <!-- Add / Edit Product Form -->
+              <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-silver-200 shadow-xs h-fit">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">
+                  ${state.editingProductId ? 'Edit Product / Bearing' : 'Add New Product / Bearing'}
+                </h3>
+                ${renderAdminProductForm()}
+              </div>
+
+              <!-- Product Catalogue Table -->
+              <div class="lg:col-span-7 bg-white p-6 rounded-2xl border border-silver-200 shadow-xs overflow-x-auto">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Manage Storefront Inventory</h3>
+                <table class="w-full text-left text-xs sm:text-sm">
+                  <thead class="bg-slate-100 text-slate-700 text-xs uppercase">
+                    <tr>
+                      <th class="py-3 px-3">Part</th>
+                      <th class="py-3 px-3">Category</th>
+                      <th class="py-3 px-3">Price (LKR)</th>
+                      <th class="py-3 px-3">Stock</th>
+                      <th class="py-3 px-3 text-right">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${state.products.map(p => `
+                      <tr class="border-b border-slate-100 hover:bg-slate-50">
+                        <td class="py-3 px-3">
+                          <div class="font-tech font-bold text-royal-600">${p.brand} • ${p.partNumber}</div>
+                          <div class="font-semibold text-slate-900 line-clamp-1">${p.name}</div>
+                        </td>
+                        <td class="py-3 px-3 text-xs text-slate-600">${p.subcategory}</td>
+                        <td class="py-3 px-3 font-bold">${formatLKR(p.price)}</td>
+                        <td class="py-3 px-3">
+                          <span class="px-2 py-0.5 rounded-full text-xs font-bold ${p.stock <= 10 ? 'bg-amber-100 text-amber-800' : 'bg-emerald-100 text-emerald-700'}">${p.stock}</span>
+                        </td>
+                        <td class="py-3 px-3 text-right whitespace-nowrap space-x-1">
+                          <button onclick="state.editingProductId = '${p.id}'; renderCurrentView();" class="px-2.5 py-1 rounded-lg bg-royal-50 text-royal-600 hover:bg-royal-600 hover:text-white text-xs font-semibold">Edit</button>
+                          <button onclick="deleteAdminProduct('${p.id}')" class="px-2.5 py-1 rounded-lg bg-red-50 text-red-600 hover:bg-red-600 hover:text-white text-xs font-semibold">Del</button>
+                        </td>
+                      </tr>
+                    `).join("")}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- TAB 4: ORDER MANAGEMENT -->
+          ${state.adminTab === 'orders' ? `
+            <div class="bg-white p-6 rounded-2xl border border-silver-200 shadow-xs overflow-x-auto">
+              <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Customer Orders & Dispatch Control</h3>
+              <table class="w-full text-left text-xs sm:text-sm">
+                <thead class="bg-navy-900 text-white text-xs uppercase">
+                  <tr>
+                    <th class="py-3 px-3">Order Ref</th>
+                    <th class="py-3 px-3">Customer & District</th>
+                    <th class="py-3 px-3">Payment</th>
+                    <th class="py-3 px-3">Total (LKR)</th>
+                    <th class="py-3 px-3">Delivery Status</th>
+                    <th class="py-3 px-3 text-right">Invoice</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${state.orders.map(o => `
+                    <tr class="border-b border-slate-200">
+                      <td class="py-3.5 px-3 font-tech font-bold text-base text-navy-900">${o.orderRef}<div class="font-sans text-[11px] font-normal text-slate-500">${o.date}</div></td>
+                      <td class="py-3.5 px-3">
+                        <div class="font-bold">${o.customer.name}</div>
+                        <div class="text-xs text-slate-500">${o.customer.phone} • ${o.customer.district}</div>
+                      </td>
+                      <td class="py-3.5 px-3 text-xs">
+                        <div class="font-semibold">${o.paymentMethod}</div>
+                        <span class="text-emerald-600 font-bold">${o.paymentStatus}</span>
+                      </td>
+                      <td class="py-3.5 px-3 font-extrabold">${formatLKR(o.total)}</td>
+                      <td class="py-3.5 px-3">
+                        <select onchange="updateOrderStatusAdmin('${o.orderRef}', this.value)" class="border border-silver-300 rounded-lg px-2.5 py-1.5 text-xs font-bold bg-slate-50">
+                          ${["Pending", "Confirmed", "Dispatched", "Delivered"].map(st => `<option value="${st}" ${o.status === st ? 'selected' : ''}>${st}</option>`).join("")}
+                        </select>
+                      </td>
+                      <td class="py-3.5 px-3 text-right">
+                        <button onclick="showOrderInvoiceModal('${o.orderRef}')" class="px-3 py-1.5 rounded-lg bg-royal-600 text-white text-xs font-bold">View Invoice</button>
+                      </td>
+                    </tr>
+                  `).join("")}
+                </tbody>
+              </table>
+            </div>
+          ` : ''}
+
+          <!-- TAB 5: CUSTOMERS & INQUIRIES -->
+          ${state.adminTab === 'customers' ? `
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-white p-6 rounded-2xl border border-silver-200">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Registered Customers (${state.users.length})</h3>
+                <div class="space-y-3">
+                  ${state.users.map(u => `
+                    <div class="p-4 rounded-xl border border-silver-200 flex justify-between items-center text-sm">
+                      <div>
+                        <div class="font-bold text-navy-900">${u.name}</div>
+                        <div class="text-xs text-slate-500">${u.email} &bull; ${u.phone}</div>
+                      </div>
+                      <span class="text-xs font-semibold text-royal-600">${u.address?.district || 'Sri Lanka'}</span>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-2xl border border-silver-200">
+                <h3 class="font-tech font-bold text-xl text-navy-900 uppercase mb-4">Customer & Bulk Quote Inquiries (${state.inquiries.length})</h3>
+                <div class="space-y-3">
+                  ${state.inquiries.map(inq => `
+                    <div class="p-4 rounded-xl bg-slate-50 border border-silver-200 text-sm">
+                      <div class="flex justify-between items-start mb-1">
+                        <span class="font-bold text-navy-900">${inq.name}</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded bg-royal-100 text-royal-700 font-bold">${inq.type}</span>
+                      </div>
+                      <div class="text-xs text-slate-500 mb-2">${inq.phone} ${inq.email ? '• ' + inq.email : ''} • ${inq.date}</div>
+                      <p class="text-xs text-slate-700 bg-white p-2.5 rounded-lg border border-silver-200">${inq.message}</p>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- TAB 6: FULL-STACK NODE.JS / EXPRESS + POSTGRESQL / SUPABASE SCHEMA BLUEPRINT -->
+          ${state.adminTab === 'blueprint' ? `
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-silver-200 space-y-6">
+              <div>
+                <span class="px-3 py-1 rounded-full bg-royal-100 text-royal-700 text-xs font-bold">Production Backend Architecture</span>
+                <h3 class="font-tech font-bold text-2xl text-navy-900 uppercase mt-2">PostgreSQL / Supabase SQL Schema & Express.js REST API</h3>
+                <p class="text-sm text-slate-600">Copy the complete SQL migration schema and Node.js/Express server code below when deploying to Supabase + Render/Railway.</p>
+              </div>
+              <pre class="bg-navy-950 text-emerald-400 p-5 rounded-2xl text-xs overflow-x-auto leading-relaxed font-mono">-- INTOR LANKA SPARE PARTS — POSTGRESQL / SUPABASE SCHEMA
+CREATE TABLE users (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  full_name VARCHAR(150) NOT NULL,
+  email VARCHAR(150) UNIQUE NOT NULL,
+  phone VARCHAR(30) NOT NULL,
+  password_hash TEXT NOT NULL,
+  role VARCHAR(20) DEFAULT 'customer' CHECK (role IN ('customer', 'admin')),
+  address_json JSONB DEFAULT '{}',
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE categories (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) UNIQUE NOT NULL,
+  slug VARCHAR(120) UNIQUE NOT NULL
+);
+
+CREATE TABLE subcategories (
+  id SERIAL PRIMARY KEY,
+  category_id INT REFERENCES categories(id) ON DELETE CASCADE,
+  name VARCHAR(120) NOT NULL
+);
+
+CREATE TABLE products (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  part_number VARCHAR(80) NOT NULL,
+  name VARCHAR(200) NOT NULL,
+  brand VARCHAR(80) NOT NULL,
+  category_id INT REFERENCES categories(id),
+  subcategory_id INT REFERENCES subcategories(id),
+  price_lkr NUMERIC(12,2) NOT NULL,
+  stock_qty INT NOT NULL DEFAULT 0,
+  description TEXT,
+  specs_json JSONB DEFAULT '{}',
+  image_urls TEXT[] DEFAULT '{}',
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE orders (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  order_ref VARCHAR(30) UNIQUE NOT NULL,
+  user_id UUID REFERENCES users(id),
+  customer_details JSONB NOT NULL,
+  delivery_method VARCHAR(100) NOT NULL,
+  delivery_fee_lkr NUMERIC(10,2) DEFAULT 0,
+  payment_method VARCHAR(80) NOT NULL,
+  payment_status VARCHAR(40) DEFAULT 'Pending',
+  order_status VARCHAR(40) DEFAULT 'Pending',
+  total_lkr NUMERIC(12,2) NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE order_items (
+  id SERIAL PRIMARY KEY,
+  order_id UUID REFERENCES orders(id) ON DELETE CASCADE,
+  product_id UUID REFERENCES products(id),
+  quantity INT NOT NULL,
+  unit_price_lkr NUMERIC(12,2) NOT NULL
+);
+
+CREATE TABLE site_settings (
+  id INT PRIMARY KEY DEFAULT 1,
+  logo_url TEXT,
+  hero_banner_url TEXT,
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);</pre>
+            </div>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    function renderAdminProductForm() {
+      const editing = state.editingProductId ? state.products.find(p => p.id === state.editingProductId) : null;
+      const selectedCat = editing ? editing.category : "Automotive Spare Parts";
+      const subcats = CATEGORIES_TAXONOMY[selectedCat];
+
+      return `
+        <form onsubmit="saveAdminProduct(event)" class="space-y-3 text-sm">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Product / Bearing Name *</label>
+            <input type="text" id="adm-p-name" required value="${editing ? editing.name : ''}" placeholder="e.g. SKF Deep Groove Ball Bearing 6306-2RS" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Part Number *</label>
+              <input type="text" id="adm-p-part" required value="${editing ? editing.partNumber : ''}" placeholder="6306-2RS" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Brand *</label>
+              <input type="text" id="adm-p-brand" required value="${editing ? editing.brand : ''}" placeholder="SKF / NSK / DENSO" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Main Category</label>
+              <select id="adm-p-cat" onchange="updateAdminSubcatOptions(this.value)" class="w-full border border-silver-300 rounded-xl px-3 py-2 bg-white">
+                ${Object.keys(CATEGORIES_TAXONOMY).map(c => `<option value="${c}" ${selectedCat === c ? 'selected' : ''}>${c}</option>`).join("")}
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Subcategory</label>
+              <select id="adm-p-subcat" class="w-full border border-silver-300 rounded-xl px-3 py-2 bg-white">
+                ${subcats.map(s => `<option value="${s}" ${editing && editing.subcategory === s ? 'selected' : ''}>${s}</option>`).join("")}
+              </select>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Price (LKR) *</label>
+              <input type="number" id="adm-p-price" required min="1" value="${editing ? editing.price : ''}" placeholder="4500" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Stock Quantity *</label>
+              <input type="number" id="adm-p-stock" required min="0" value="${editing ? editing.stock : 25}" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Technical Specs (ID / OD / Width / Vehicle Fitment)</label>
+            <input type="text" id="adm-p-spec" value="${editing ? Object.values(editing.specs || {}).join(' | ') : ''}" placeholder="e.g. ID: 30mm | OD: 72mm | Width: 19mm" class="w-full border border-silver-300 rounded-xl px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Description *</label>
+            <textarea id="adm-p-desc" required rows="2" placeholder="Product engineering description..." class="w-full border border-silver-300 rounded-xl px-3 py-2">${editing ? editing.description : ''}</textarea>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Upload Custom Product / Bearing Photos</label>
+            <input type="file" id="adm-p-images" accept="image/*" multiple class="w-full text-xs file:mr-3 file:py-2 file:px-3 file:rounded-lg file:border-0 file:font-bold file:bg-navy-900 file:text-white" />
+          </div>
+          <div class="flex gap-2 pt-2">
+            <button type="submit" class="flex-1 bg-royal-600 hover:bg-royal-500 text-white py-2.5 rounded-xl font-bold text-xs">
+              ${editing ? 'Update Product' : 'Add Product to Store'}
+            </button>
+            ${editing ? `
+              <button type="button" onclick="state.editingProductId = null; renderCurrentView();" class="px-4 py-2.5 rounded-xl border border-silver-300 text-xs font-semibold">
+                Cancel
+              </button>
+            ` : ''}
+          </div>
+        </form>
+      `;
+    }
+
+    function updateAdminSubcatOptions(cat) {
+      const el = document.getElementById("adm-p-subcat");
+      if (!el) return;
+      el.innerHTML = CATEGORIES_TAXONOMY[cat].map(s => `<option value="${s}">${s}</option>`).join("");
+    }
+
+    async function saveAdminProduct(e) {
+      e.preventDefault();
+      const fileInput = document.getElementById("adm-p-images");
+      const uploadedDataUrls = [];
+
+      if (fileInput && fileInput.files.length > 0) {
+        for (const file of fileInput.files) {
+          const dataUrl = await readFileAsDataURL(file);
+          uploadedDataUrls.push(dataUrl);
+        }
+      }
+
+      const category = document.getElementById("adm-p-cat").value;
+      const specSummary = document.getElementById("adm-p-spec").value.trim();
+
+      const payload = {
+        name: document.getElementById("adm-p-name").value.trim(),
+        partNumber: document.getElementById("adm-p-part").value.trim(),
+        brand: document.getElementById("adm-p-brand").value.trim().toUpperCase(),
+        category,
+        subcategory: document.getElementById("adm-p-subcat").value,
+        price: Number(document.getElementById("adm-p-price").value),
+        stock: Number(document.getElementById("adm-p-stock").value),
+        description: document.getElementById("adm-p-desc").value.trim(),
+        specs: specSummary ? { "Technical Specification": specSummary } : { "Standard": "OEM Specification" },
+        visualType: category === "Machinery Bearings" ? "pillow" : category === "Automotive Spare Parts" ? "brake" : "bearing"
+      };
+
+      if (state.editingProductId) {
+        const idx = state.products.findIndex(p => p.id === state.editingProductId);
+        if (idx !== -1) {
+          state.products[idx] = {
+            ...state.products[idx],
+            ...payload,
+            customImages: uploadedDataUrls.length > 0 ? uploadedDataUrls : state.products[idx].customImages
+          };
+        }
+        state.editingProductId = null;
+        showToast("Product updated successfully!");
+      } else {
+        state.products.unshift({
+          id: "PRD-" + Math.floor(1020 + Math.random() * 8900),
+          featured: true,
+          bestSeller: false,
+          customImages: uploadedDataUrls,
+          ...payload
+        });
+        showToast("New product published to storefront!");
+      }
+
+      persistState();
+      renderCurrentView();
+    }
+
+    function deleteAdminProduct(id) {
+      state.products = state.products.filter(p => p.id !== id);
+      persistState();
+      showToast("Product removed from catalogue.", "warning");
+      renderCurrentView();
+    }
+
+    function updateOrderStatusAdmin(orderRef, newStatus) {
+      const order = state.orders.find(o => o.orderRef === orderRef);
+      if (order) {
+        order.status = newStatus;
+        if (newStatus === "Delivered" && order.paymentMethod.includes("COD")) {
+          order.paymentStatus = "Collected (Cash)";
+        }
+        persistState();
+        showToast(`Order ${orderRef} status updated to ${newStatus}.`);
+      }
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const email = document.getElementById("admin-email-input").value.trim();
+      const pass = document.getElementById("admin-pass-input").value;
+      if (email === "admin@intorlanka.lk" && pass === "admin2026") {
+        state.isAdminAuthenticated = true;
+        persistState();
+        showToast("Admin authenticated successfully.");
+        renderCurrentView();
+      } else {
+        showToast("Invalid admin credentials.", "error");
+      }
+    }
+
+    function readFileAsDataURL(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function handleBrandImageUpload(event, targetKey) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const dataUrl = await readFileAsDataURL(file);
+      state.branding[targetKey] = dataUrl;
+      persistState();
+      renderCurrentView();
+      showToast(targetKey === 'logoDataUrl' ? "Official INTOR LANKA logo updated live!" : "Hero banner image updated live!");
+    }
+
+    /*************************************************************************
+     * 7. INITIALIZE APPLICATION ON LOAD
+     *************************************************************************/
+    window.addEventListener("DOMContentLoaded", () => {
+      populateMegaMenus();
+      updateGlobalBadges();
+      renderCurrentView();
+    });
+  </script>
+</body>
+</html>
